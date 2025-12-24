@@ -1,0 +1,98 @@
+---
+source: tests/new.rs
+assertion_line: 19
+expression: output
+
+---
+     Created `typical90` package at {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90
+       Saved 5 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{001.yml, 001{{ slash_or_backslash }}}
+       Saved 4 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{002.yml, 002{{ slash_or_backslash }}}
+       Saved 4 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{003.yml, 003{{ slash_or_backslash }}}
+       Saved 4 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{004.yml, 004{{ slash_or_backslash }}}
+       Saved 5 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{005.yml, 005{{ slash_or_backslash }}}
+       Saved 2 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{006.yml, 006{{ slash_or_backslash }}}
+       Saved 4 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{007.yml, 007{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{008.yml, 008{{ slash_or_backslash }}}
+       Saved 4 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{009.yml, 009{{ slash_or_backslash }}}
+       Saved 4 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{010.yml, 010{{ slash_or_backslash }}}
+       Saved 5 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{011.yml, 011{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{012.yml, 012{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{013.yml, 013{{ slash_or_backslash }}}
+       Saved 4 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{014.yml, 014{{ slash_or_backslash }}}
+       Saved 7 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{015.yml, 015{{ slash_or_backslash }}}
+       Saved 4 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{016.yml, 016{{ slash_or_backslash }}}
+       Saved 5 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{017.yml, 017{{ slash_or_backslash }}}
+       Saved 2 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{018.yml, 018{{ slash_or_backslash }}}
+       Saved 4 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{019.yml, 019{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{020.yml, 020{{ slash_or_backslash }}}
+       Saved 2 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{021.yml, 021{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{022.yml, 022{{ slash_or_backslash }}}
+       Saved 5 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{023.yml, 023{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{024.yml, 024{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{025.yml, 025{{ slash_or_backslash }}}
+       Saved 2 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{026.yml, 026{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{027.yml, 027{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{028.yml, 028{{ slash_or_backslash }}}
+       Saved 4 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{029.yml, 029{{ slash_or_backslash }}}
+       Saved 5 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{030.yml, 030{{ slash_or_backslash }}}
+       Saved 5 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{031.yml, 031{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{032.yml, 032{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{033.yml, 033{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{034.yml, 034{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{035.yml, 035{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{036.yml, 036{{ slash_or_backslash }}}
+       Saved 4 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{037.yml, 037{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{038.yml, 038{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{039.yml, 039{{ slash_or_backslash }}}
+       Saved 2 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{040.yml, 040{{ slash_or_backslash }}}
+       Saved 5 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{041.yml, 041{{ slash_or_backslash }}}
+       Saved 2 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{042.yml, 042{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{043.yml, 043{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{044.yml, 044{{ slash_or_backslash }}}
+       Saved 4 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{045.yml, 045{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{046.yml, 046{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{047.yml, 047{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{048.yml, 048{{ slash_or_backslash }}}
+       Saved 4 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{049.yml, 049{{ slash_or_backslash }}}
+       Saved 4 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{050.yml, 050{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{051.yml, 051{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{052.yml, 052{{ slash_or_backslash }}}
+       Saved no test cases (interactive problem) to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}053.yml
+       Saved 4 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{054.yml, 054{{ slash_or_backslash }}}
+       Saved 2 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{055.yml, 055{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{056.yml, 056{{ slash_or_backslash }}}
+       Saved 4 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{057.yml, 057{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{058.yml, 058{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{059.yml, 059{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{060.yml, 060{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{061.yml, 061{{ slash_or_backslash }}}
+       Saved 5 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{062.yml, 062{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{063.yml, 063{{ slash_or_backslash }}}
+       Saved 2 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{064.yml, 064{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{065.yml, 065{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{066.yml, 066{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{067.yml, 067{{ slash_or_backslash }}}
+       Saved 2 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{068.yml, 068{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{069.yml, 069{{ slash_or_backslash }}}
+       Saved 4 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{070.yml, 070{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{071.yml, 071{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{072.yml, 072{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{073.yml, 073{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{074.yml, 074{{ slash_or_backslash }}}
+       Saved 4 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{075.yml, 075{{ slash_or_backslash }}}
+       Saved 4 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{076.yml, 076{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{077.yml, 077{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{078.yml, 078{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{079.yml, 079{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{080.yml, 080{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{081.yml, 081{{ slash_or_backslash }}}
+       Saved 4 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{082.yml, 082{{ slash_or_backslash }}}
+       Saved 2 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{083.yml, 083{{ slash_or_backslash }}}
+       Saved 4 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{084.yml, 084{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{085.yml, 085{{ slash_or_backslash }}}
+       Saved 2 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{086.yml, 086{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{087.yml, 087{{ slash_or_backslash }}}
+       Saved 2 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{088.yml, 088{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{089.yml, 089{{ slash_or_backslash }}}
+       Saved 5 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}typical90{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{090.yml, 090{{ slash_or_backslash }}}
+

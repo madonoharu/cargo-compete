@@ -1,0 +1,87 @@
+---
+source: tests/new.rs
+assertion_line: 12
+expression: tree
+
+---
+{
+  ".cargo": {
+    "config.toml": "[cargo-new]\nname = \"\"\nemail = \"\"\n"
+  },
+  "abs": {
+    "Cargo.toml": "[package]\nname = \"abs\"\nversion = \"0.1.0\"\nedition = \"2024\"\n\n[package.metadata.cargo-compete.bin]\nabs-abc049c = { alias = \"abc049c\", problem = \"https://atcoder.jp/contests/abs/tasks/arc065_a\" }\nabs-abc081a = { alias = \"abc081a\", problem = \"https://atcoder.jp/contests/abs/tasks/abc081_a\" }\nabs-abc081b = { alias = \"abc081b\", problem = \"https://atcoder.jp/contests/abs/tasks/abc081_b\" }\nabs-abc083b = { alias = \"abc083b\", problem = \"https://atcoder.jp/contests/abs/tasks/abc083_b\" }\nabs-abc085b = { alias = \"abc085b\", problem = \"https://atcoder.jp/contests/abs/tasks/abc085_b\" }\nabs-abc085c = { alias = \"abc085c\", problem = \"https://atcoder.jp/contests/abs/tasks/abc085_c\" }\nabs-abc086a = { alias = \"abc086a\", problem = \"https://atcoder.jp/contests/abs/tasks/abc086_a\" }\nabs-abc086c = { alias = \"abc086c\", problem = \"https://atcoder.jp/contests/abs/tasks/arc089_a\" }\nabs-abc087b = { alias = \"abc087b\", problem = \"https://atcoder.jp/contests/abs/tasks/abc087_b\" }\nabs-abc088b = { alias = \"abc088b\", problem = \"https://atcoder.jp/contests/abs/tasks/abc088_b\" }\nabs-practice-a = { alias = \"practice-a\", problem = \"https://atcoder.jp/contests/abs/tasks/practice_1\" }\n\n[[bin]]\nname = \"abs-abc049c\"\npath = \"src/bin/abc049c.rs\"\n\n[[bin]]\nname = \"abs-abc081a\"\npath = \"src/bin/abc081a.rs\"\n\n[[bin]]\nname = \"abs-abc081b\"\npath = \"src/bin/abc081b.rs\"\n\n[[bin]]\nname = \"abs-abc083b\"\npath = \"src/bin/abc083b.rs\"\n\n[[bin]]\nname = \"abs-abc085b\"\npath = \"src/bin/abc085b.rs\"\n\n[[bin]]\nname = \"abs-abc085c\"\npath = \"src/bin/abc085c.rs\"\n\n[[bin]]\nname = \"abs-abc086a\"\npath = \"src/bin/abc086a.rs\"\n\n[[bin]]\nname = \"abs-abc086c\"\npath = \"src/bin/abc086c.rs\"\n\n[[bin]]\nname = \"abs-abc087b\"\npath = \"src/bin/abc087b.rs\"\n\n[[bin]]\nname = \"abs-abc088b\"\npath = \"src/bin/abc088b.rs\"\n\n[[bin]]\nname = \"abs-practice-a\"\npath = \"src/bin/practice-a.rs\"\n\n[dependencies]\nproconio = \"=0.3.6\"\n\n[dev-dependencies]\n",
+    "src": {
+      "bin": {
+        "abc049c.rs": "fn main() {\n    todo!();\n}\n",
+        "abc081a.rs": "fn main() {\n    todo!();\n}\n",
+        "abc081b.rs": "fn main() {\n    todo!();\n}\n",
+        "abc083b.rs": "fn main() {\n    todo!();\n}\n",
+        "abc085b.rs": "fn main() {\n    todo!();\n}\n",
+        "abc085c.rs": "fn main() {\n    todo!();\n}\n",
+        "abc086a.rs": "fn main() {\n    todo!();\n}\n",
+        "abc086c.rs": "fn main() {\n    todo!();\n}\n",
+        "abc087b.rs": "fn main() {\n    todo!();\n}\n",
+        "abc088b.rs": "fn main() {\n    todo!();\n}\n",
+        "practice-a.rs": "fn main() {\n    todo!();\n}\n"
+      }
+    },
+    "testcases": {
+      "abc049c": {
+        "in": {},
+        "out": {}
+      },
+      "abc049c.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      erasedream\n    out: |\n      YES\n  - name: sample2\n    in: |\n      dreameraser\n    out: |\n      YES\n  - name: sample3\n    in: |\n      dreamerer\n    out: |\n      NO\n\nextend:\n  - type: Text\n    path: \"./abc049c\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "abc081a": {
+        "in": {},
+        "out": {}
+      },
+      "abc081a.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      101\n    out: |\n      2\n  - name: sample2\n    in: |\n      000\n    out: |\n      0\n\nextend:\n  - type: Text\n    path: \"./abc081a\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "abc081b": {
+        "in": {},
+        "out": {}
+      },
+      "abc081b.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      3\n      8 12 40\n    out: |\n      2\n  - name: sample2\n    in: |\n      4\n      5 6 8 10\n    out: |\n      0\n  - name: sample3\n    in: |\n      6\n      382253568 723152896 37802240 379425024 404894720 471526144\n    out: |\n      8\n\nextend:\n  - type: Text\n    path: \"./abc081b\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "abc083b": {
+        "in": {},
+        "out": {}
+      },
+      "abc083b.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      20 2 5\n    out: |\n      84\n  - name: sample2\n    in: |\n      10 1 2\n    out: |\n      13\n  - name: sample3\n    in: |\n      100 4 16\n    out: |\n      4554\n\nextend:\n  - type: Text\n    path: \"./abc083b\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "abc085b": {
+        "in": {},
+        "out": {}
+      },
+      "abc085b.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      4\n      10\n      8\n      8\n      6\n    out: |\n      3\n  - name: sample2\n    in: |\n      3\n      15\n      15\n      15\n    out: |\n      1\n  - name: sample3\n    in: |\n      7\n      50\n      30\n      50\n      100\n      50\n      80\n      30\n    out: |\n      4\n\nextend:\n  - type: Text\n    path: \"./abc085b\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "abc085c": {
+        "in": {},
+        "out": {}
+      },
+      "abc085c.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      9 45000\n    out: |\n      4 0 5\n  - name: sample2\n    in: |\n      20 196000\n    out: |\n      -1 -1 -1\n  - name: sample3\n    in: |\n      1000 1234000\n    out: |\n      14 27 959\n  - name: sample4\n    in: |\n      2000 20000000\n    out: |\n      2000 0 0\n\nextend:\n  - type: Text\n    path: \"./abc085c\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "abc086a": {
+        "in": {},
+        "out": {}
+      },
+      "abc086a.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      3 4\n    out: |\n      Even\n  - name: sample2\n    in: |\n      1 21\n    out: |\n      Odd\n\nextend:\n  - type: Text\n    path: \"./abc086a\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "abc086c": {
+        "in": {},
+        "out": {}
+      },
+      "abc086c.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      2\n      3 1 2\n      6 1 1\n    out: |\n      Yes\n  - name: sample2\n    in: |\n      1\n      2 100 100\n    out: |\n      No\n  - name: sample3\n    in: |\n      2\n      5 1 1\n      100 1 1\n    out: |\n      No\n\nextend:\n  - type: Text\n    path: \"./abc086c\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "abc087b": {
+        "in": {},
+        "out": {}
+      },
+      "abc087b.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      2\n      2\n      2\n      100\n    out: |\n      2\n  - name: sample2\n    in: |\n      5\n      1\n      0\n      150\n    out: |\n      0\n  - name: sample3\n    in: |\n      30\n      40\n      50\n      6000\n    out: |\n      213\n\nextend:\n  - type: Text\n    path: \"./abc087b\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "abc088b": {
+        "in": {},
+        "out": {}
+      },
+      "abc088b.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      2\n      3 1\n    out: |\n      2\n  - name: sample2\n    in: |\n      3\n      2 7 4\n    out: |\n      5\n  - name: sample3\n    in: |\n      4\n      20 18 2 18\n    out: |\n      18\n\nextend:\n  - type: Text\n    path: \"./abc088b\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "practice-a": {
+        "in": {},
+        "out": {}
+      },
+      "practice-a.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      1\n      2 3\n      test\n    out: |\n      6 test\n  - name: sample2\n    in: |\n      72\n      128 256\n      myonmyon\n    out: |\n      456 myonmyon\n\nextend:\n  - type: Text\n    path: \"./practice-a\"\n    in: /in/*.txt\n    out: /out/*.txt\n"
+    }
+  },
+  "compete.toml": "test-suite = \"{{ manifest_dir }}/testcases/{{ bin_alias | kebabcase }}.yml\"\n\n[template]\nsrc = '''\nfn main() {\n    todo!();\n}\n'''\n\n[template.new]\nedition = \"2024\"\ndependencies = '''\nproconio = \"=0.3.6\"\n'''\n\n[new]\nplatform = \"atcoder\"\npath = \"./{{ package_name }}\"\n"
+}

@@ -9,13 +9,13 @@ use strum::VariantNames as _;
 
 static TEMPLATE_CARGO_LOCK: &str = "./template-cargo-lock.toml";
 
-static ATCODER_RUST_EDITION: &str = "2018";
-static CODEFORCES_RUST_EDITION: &str = "2021";
-static YUKICODER_RUST_EDITION: &str = "2018";
+static ATCODER_RUST_EDITION: &str = "2024";
+static CODEFORCES_RUST_EDITION: &str = "2024";
+static YUKICODER_RUST_EDITION: &str = "2024";
 
-static ATCODER_RUST_VERSION: &str = "1.42.0";
-static CODEFORCES_RUST_VERSION: &str = "1.57.0";
-static YUKICODER_RUST_VERSION: &str = "1.53.0";
+static ATCODER_RUST_VERSION: &str = "1.89.0";
+static CODEFORCES_RUST_VERSION: &str = "1.89.0";
+static YUKICODER_RUST_VERSION: &str = "1.83.0";
 
 #[derive(StructOpt, Debug)]
 pub struct OptCompeteInit {

@@ -1,5 +1,5 @@
 use crate::{project::PackageExt as _, shell::Shell};
-use anyhow::{bail, Context as _};
+use anyhow::{Context as _, bail};
 use camino::{Utf8Path, Utf8PathBuf};
 use cargo_metadata as cm;
 use derivative::Derivative;
@@ -7,7 +7,7 @@ use heck::KebabCase as _;
 use indexmap::indexset;
 use liquid::object;
 use maplit::btreemap;
-use serde::{de::Error as _, Deserialize, Deserializer};
+use serde::{Deserialize, Deserializer, de::Error as _};
 use snowchains_core::web::PlatformKind;
 use std::{
     collections::BTreeMap,
@@ -165,9 +165,9 @@ impl CargoCompeteConfig {
 
             let dependencies = match dependencies {
                 CargoCompeteConfigNewTemplateDependencies::Inline { content } => {
-                    content.parse::<toml_edit::Document>().with_context(|| {
-                        "could not parse the toml value in `new.template.dependencies.content`"
-                    })?
+                    content.parse::<toml_edit::Document>().with_context(
+                        || "could not parse the toml value in `new.template.dependencies.content`",
+                    )?
                 }
                 CargoCompeteConfigNewTemplateDependencies::ManifestFile { path } => {
                     let mut dependencies = toml_edit::Document::new();
@@ -235,6 +235,8 @@ pub(crate) enum Edition {
     Edition2018,
     #[strum(serialize = "2021")]
     Edition2021,
+    #[strum(serialize = "2024")]
+    Edition2024,
 }
 
 fn deser_option_fromstr<'de, D, T>(deserializer: D) -> Result<Option<T>, D::Error>
@@ -736,12 +738,12 @@ mod tests {
             submit_via_bianry: bool,
         ) -> anyhow::Result<()> {
             let generated = super::generate(
-                "2018",
+                "2024",
                 template_new_dependencies_content
                     .then_some(include_str!("../resources/atcoder-deps.toml")),
                 template_new_lockfile.then_some("./cargo-lock-template.toml"),
                 PlatformKind::Atcoder,
-                "1.42.0",
+                "1.89.0",
                 submit_via_bianry,
                 ATCODER_RUST_LANG_ID,
             )?;

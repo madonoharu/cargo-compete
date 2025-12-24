@@ -6,18 +6,18 @@ use snowchains_core::web::PlatformKind;
 use std::io::BufRead;
 
 #[test]
-fn atcoder_abc003() -> anyhow::Result<()> {
-    let (output, tree) = run(PlatformKind::Atcoder, "abc003", &b""[..])?;
-    assert_snapshot!("atcoder_abc003_output", output);
-    assert_json_snapshot!("atcoder_abc003_file_tree", tree, { r#".**["Cargo.lock"]"# => ".." });
+fn atcoder_abs() -> anyhow::Result<()> {
+    let (output, tree) = run(PlatformKind::Atcoder, "abs", &b""[..])?;
+    assert_snapshot!("atcoder_abs_output", output);
+    assert_json_snapshot!("atcoder_abs_file_tree", tree, { r#".**["Cargo.lock"]"# => ".." });
     Ok(())
 }
 
 #[test]
-fn atcoder_abc007() -> anyhow::Result<()> {
-    let (output, tree) = run(PlatformKind::Atcoder, "abc007", &b""[..])?;
-    assert_snapshot!("atcoder_abc007_output", output);
-    assert_json_snapshot!("atcoder_abc007_file_tree", tree, { r#".**["Cargo.lock"]"# => ".." });
+fn atcoder_typical90() -> anyhow::Result<()> {
+    let (output, tree) = run(PlatformKind::Atcoder, "typical90", &b""[..])?;
+    assert_snapshot!("atcoder_typical90_output", output);
+    assert_json_snapshot!("atcoder_typical90_file_tree", tree, { r#".**["Cargo.lock"]"# => ".." });
     Ok(())
 }
 
@@ -79,7 +79,7 @@ fn main() {{
 '''
 
 [template.new]
-edition = "2021"
+edition = "2024"
 dependencies = '''
 proconio = "=0.3.6"
 '''

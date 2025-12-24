@@ -1,18 +1,13 @@
 [package]
 name = "cargo-compete"
 version = "0.10.7"
-authors = ["Ryo Yamashita <qryxip@gmail.com>"]
-edition = "2018"
-license = "MIT OR Apache-2.0"
+edition = "2024"
 description = "A Cargo subcommand for competitive programming."
-repository = "https://github.com/qryxip/cargo-compete"
 readme = "README.md"
-keywords = ["competitive", "cli", "windows"]
+repository = "https://github.com/qryxip/cargo-compete"
+license = "MIT OR Apache-2.0"
+keywords = ["cli", "competitive", "windows"]
 categories = ["command-line-utilities", "development-tools::cargo-plugins"]
-
-[features]
-default = []
-__test_with_credentials = []
 
 [dependencies]
 anyhow = "1.0.54"
@@ -42,7 +37,9 @@ once_cell = "1.9.0"
 opener = "0.4.1"
 percent-encoding = "2.1.0"
 prettytable-rs = "0.10.0"
-reqwest = { version = "0.11.9", default-features = false, features = ["blocking"] }
+reqwest = { version = "0.11.9", default-features = false, features = [
+  "blocking"
+] }
 rpassword = "5.0.1"
 rprompt = "1.0.5"
 serde = { version = "1.0.136", features = ["derive"] }
@@ -62,10 +59,14 @@ toml_edit = "0.8.0"
 url = { version = "2.2.2", features = ["serde"] }
 which = "4.2.4"
 
-[target.'cfg(windows)'.dependencies]
-term_size = "=1.0.0-beta.2"
-
 [dev-dependencies]
 insta = { version = "1.12.0", features = ["redactions"] }
 pretty_assertions = "0.7.2"
 regex = "1.5.4"
+
+[target.'cfg(windows)'.dependencies]
+term_size = "=1.0.0-beta.2"
+
+[features]
+default = []
+__test_with_credentials = []

@@ -1,0 +1,557 @@
+---
+source: tests/new.rs
+assertion_line: 20
+expression: tree
+
+---
+{
+  ".cargo": {
+    "config.toml": "[cargo-new]\nname = \"\"\nemail = \"\"\n"
+  },
+  "compete.toml": "test-suite = \"{{ manifest_dir }}/testcases/{{ bin_alias | kebabcase }}.yml\"\n\n[template]\nsrc = '''\nfn main() {\n    todo!();\n}\n'''\n\n[template.new]\nedition = \"2024\"\ndependencies = '''\nproconio = \"=0.3.6\"\n'''\n\n[new]\nplatform = \"atcoder\"\npath = \"./{{ package_name }}\"\n",
+  "typical90": {
+    "Cargo.toml": "[package]\nname = \"typical90\"\nversion = \"0.1.0\"\nedition = \"2024\"\n\n[package.metadata.cargo-compete.bin]\ntypical90-001 = { alias = \"001\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_a\" }\ntypical90-002 = { alias = \"002\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_b\" }\ntypical90-003 = { alias = \"003\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_c\" }\ntypical90-004 = { alias = \"004\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_d\" }\ntypical90-005 = { alias = \"005\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_e\" }\ntypical90-006 = { alias = \"006\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_f\" }\ntypical90-007 = { alias = \"007\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_g\" }\ntypical90-008 = { alias = \"008\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_h\" }\ntypical90-009 = { alias = \"009\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_i\" }\ntypical90-010 = { alias = \"010\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_j\" }\ntypical90-011 = { alias = \"011\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_k\" }\ntypical90-012 = { alias = \"012\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_l\" }\ntypical90-013 = { alias = \"013\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_m\" }\ntypical90-014 = { alias = \"014\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_n\" }\ntypical90-015 = { alias = \"015\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_o\" }\ntypical90-016 = { alias = \"016\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_p\" }\ntypical90-017 = { alias = \"017\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_q\" }\ntypical90-018 = { alias = \"018\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_r\" }\ntypical90-019 = { alias = \"019\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_s\" }\ntypical90-020 = { alias = \"020\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_t\" }\ntypical90-021 = { alias = \"021\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_u\" }\ntypical90-022 = { alias = \"022\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_v\" }\ntypical90-023 = { alias = \"023\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_w\" }\ntypical90-024 = { alias = \"024\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_x\" }\ntypical90-025 = { alias = \"025\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_y\" }\ntypical90-026 = { alias = \"026\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_z\" }\ntypical90-027 = { alias = \"027\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_aa\" }\ntypical90-028 = { alias = \"028\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_ab\" }\ntypical90-029 = { alias = \"029\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_ac\" }\ntypical90-030 = { alias = \"030\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_ad\" }\ntypical90-031 = { alias = \"031\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_ae\" }\ntypical90-032 = { alias = \"032\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_af\" }\ntypical90-033 = { alias = \"033\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_ag\" }\ntypical90-034 = { alias = \"034\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_ah\" }\ntypical90-035 = { alias = \"035\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_ai\" }\ntypical90-036 = { alias = \"036\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_aj\" }\ntypical90-037 = { alias = \"037\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_ak\" }\ntypical90-038 = { alias = \"038\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_al\" }\ntypical90-039 = { alias = \"039\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_am\" }\ntypical90-040 = { alias = \"040\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_an\" }\ntypical90-041 = { alias = \"041\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_ao\" }\ntypical90-042 = { alias = \"042\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_ap\" }\ntypical90-043 = { alias = \"043\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_aq\" }\ntypical90-044 = { alias = \"044\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_ar\" }\ntypical90-045 = { alias = \"045\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_as\" }\ntypical90-046 = { alias = \"046\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_at\" }\ntypical90-047 = { alias = \"047\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_au\" }\ntypical90-048 = { alias = \"048\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_av\" }\ntypical90-049 = { alias = \"049\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_aw\" }\ntypical90-050 = { alias = \"050\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_ax\" }\ntypical90-051 = { alias = \"051\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_ay\" }\ntypical90-052 = { alias = \"052\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_az\" }\ntypical90-053 = { alias = \"053\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_ba\" }\ntypical90-054 = { alias = \"054\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_bb\" }\ntypical90-055 = { alias = \"055\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_bc\" }\ntypical90-056 = { alias = \"056\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_bd\" }\ntypical90-057 = { alias = \"057\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_be\" }\ntypical90-058 = { alias = \"058\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_bf\" }\ntypical90-059 = { alias = \"059\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_bg\" }\ntypical90-060 = { alias = \"060\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_bh\" }\ntypical90-061 = { alias = \"061\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_bi\" }\ntypical90-062 = { alias = \"062\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_bj\" }\ntypical90-063 = { alias = \"063\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_bk\" }\ntypical90-064 = { alias = \"064\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_bl\" }\ntypical90-065 = { alias = \"065\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_bm\" }\ntypical90-066 = { alias = \"066\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_bn\" }\ntypical90-067 = { alias = \"067\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_bo\" }\ntypical90-068 = { alias = \"068\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_bp\" }\ntypical90-069 = { alias = \"069\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_bq\" }\ntypical90-070 = { alias = \"070\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_br\" }\ntypical90-071 = { alias = \"071\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_bs\" }\ntypical90-072 = { alias = \"072\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_bt\" }\ntypical90-073 = { alias = \"073\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_bu\" }\ntypical90-074 = { alias = \"074\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_bv\" }\ntypical90-075 = { alias = \"075\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_bw\" }\ntypical90-076 = { alias = \"076\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_bx\" }\ntypical90-077 = { alias = \"077\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_by\" }\ntypical90-078 = { alias = \"078\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_bz\" }\ntypical90-079 = { alias = \"079\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_ca\" }\ntypical90-080 = { alias = \"080\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_cb\" }\ntypical90-081 = { alias = \"081\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_cc\" }\ntypical90-082 = { alias = \"082\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_cd\" }\ntypical90-083 = { alias = \"083\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_ce\" }\ntypical90-084 = { alias = \"084\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_cf\" }\ntypical90-085 = { alias = \"085\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_cg\" }\ntypical90-086 = { alias = \"086\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_ch\" }\ntypical90-087 = { alias = \"087\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_ci\" }\ntypical90-088 = { alias = \"088\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_cj\" }\ntypical90-089 = { alias = \"089\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_ck\" }\ntypical90-090 = { alias = \"090\", problem = \"https://atcoder.jp/contests/typical90/tasks/typical90_cl\" }\n\n[[bin]]\nname = \"typical90-001\"\npath = \"src/bin/001.rs\"\n\n[[bin]]\nname = \"typical90-002\"\npath = \"src/bin/002.rs\"\n\n[[bin]]\nname = \"typical90-003\"\npath = \"src/bin/003.rs\"\n\n[[bin]]\nname = \"typical90-004\"\npath = \"src/bin/004.rs\"\n\n[[bin]]\nname = \"typical90-005\"\npath = \"src/bin/005.rs\"\n\n[[bin]]\nname = \"typical90-006\"\npath = \"src/bin/006.rs\"\n\n[[bin]]\nname = \"typical90-007\"\npath = \"src/bin/007.rs\"\n\n[[bin]]\nname = \"typical90-008\"\npath = \"src/bin/008.rs\"\n\n[[bin]]\nname = \"typical90-009\"\npath = \"src/bin/009.rs\"\n\n[[bin]]\nname = \"typical90-010\"\npath = \"src/bin/010.rs\"\n\n[[bin]]\nname = \"typical90-011\"\npath = \"src/bin/011.rs\"\n\n[[bin]]\nname = \"typical90-012\"\npath = \"src/bin/012.rs\"\n\n[[bin]]\nname = \"typical90-013\"\npath = \"src/bin/013.rs\"\n\n[[bin]]\nname = \"typical90-014\"\npath = \"src/bin/014.rs\"\n\n[[bin]]\nname = \"typical90-015\"\npath = \"src/bin/015.rs\"\n\n[[bin]]\nname = \"typical90-016\"\npath = \"src/bin/016.rs\"\n\n[[bin]]\nname = \"typical90-017\"\npath = \"src/bin/017.rs\"\n\n[[bin]]\nname = \"typical90-018\"\npath = \"src/bin/018.rs\"\n\n[[bin]]\nname = \"typical90-019\"\npath = \"src/bin/019.rs\"\n\n[[bin]]\nname = \"typical90-020\"\npath = \"src/bin/020.rs\"\n\n[[bin]]\nname = \"typical90-021\"\npath = \"src/bin/021.rs\"\n\n[[bin]]\nname = \"typical90-022\"\npath = \"src/bin/022.rs\"\n\n[[bin]]\nname = \"typical90-023\"\npath = \"src/bin/023.rs\"\n\n[[bin]]\nname = \"typical90-024\"\npath = \"src/bin/024.rs\"\n\n[[bin]]\nname = \"typical90-025\"\npath = \"src/bin/025.rs\"\n\n[[bin]]\nname = \"typical90-026\"\npath = \"src/bin/026.rs\"\n\n[[bin]]\nname = \"typical90-027\"\npath = \"src/bin/027.rs\"\n\n[[bin]]\nname = \"typical90-028\"\npath = \"src/bin/028.rs\"\n\n[[bin]]\nname = \"typical90-029\"\npath = \"src/bin/029.rs\"\n\n[[bin]]\nname = \"typical90-030\"\npath = \"src/bin/030.rs\"\n\n[[bin]]\nname = \"typical90-031\"\npath = \"src/bin/031.rs\"\n\n[[bin]]\nname = \"typical90-032\"\npath = \"src/bin/032.rs\"\n\n[[bin]]\nname = \"typical90-033\"\npath = \"src/bin/033.rs\"\n\n[[bin]]\nname = \"typical90-034\"\npath = \"src/bin/034.rs\"\n\n[[bin]]\nname = \"typical90-035\"\npath = \"src/bin/035.rs\"\n\n[[bin]]\nname = \"typical90-036\"\npath = \"src/bin/036.rs\"\n\n[[bin]]\nname = \"typical90-037\"\npath = \"src/bin/037.rs\"\n\n[[bin]]\nname = \"typical90-038\"\npath = \"src/bin/038.rs\"\n\n[[bin]]\nname = \"typical90-039\"\npath = \"src/bin/039.rs\"\n\n[[bin]]\nname = \"typical90-040\"\npath = \"src/bin/040.rs\"\n\n[[bin]]\nname = \"typical90-041\"\npath = \"src/bin/041.rs\"\n\n[[bin]]\nname = \"typical90-042\"\npath = \"src/bin/042.rs\"\n\n[[bin]]\nname = \"typical90-043\"\npath = \"src/bin/043.rs\"\n\n[[bin]]\nname = \"typical90-044\"\npath = \"src/bin/044.rs\"\n\n[[bin]]\nname = \"typical90-045\"\npath = \"src/bin/045.rs\"\n\n[[bin]]\nname = \"typical90-046\"\npath = \"src/bin/046.rs\"\n\n[[bin]]\nname = \"typical90-047\"\npath = \"src/bin/047.rs\"\n\n[[bin]]\nname = \"typical90-048\"\npath = \"src/bin/048.rs\"\n\n[[bin]]\nname = \"typical90-049\"\npath = \"src/bin/049.rs\"\n\n[[bin]]\nname = \"typical90-050\"\npath = \"src/bin/050.rs\"\n\n[[bin]]\nname = \"typical90-051\"\npath = \"src/bin/051.rs\"\n\n[[bin]]\nname = \"typical90-052\"\npath = \"src/bin/052.rs\"\n\n[[bin]]\nname = \"typical90-053\"\npath = \"src/bin/053.rs\"\n\n[[bin]]\nname = \"typical90-054\"\npath = \"src/bin/054.rs\"\n\n[[bin]]\nname = \"typical90-055\"\npath = \"src/bin/055.rs\"\n\n[[bin]]\nname = \"typical90-056\"\npath = \"src/bin/056.rs\"\n\n[[bin]]\nname = \"typical90-057\"\npath = \"src/bin/057.rs\"\n\n[[bin]]\nname = \"typical90-058\"\npath = \"src/bin/058.rs\"\n\n[[bin]]\nname = \"typical90-059\"\npath = \"src/bin/059.rs\"\n\n[[bin]]\nname = \"typical90-060\"\npath = \"src/bin/060.rs\"\n\n[[bin]]\nname = \"typical90-061\"\npath = \"src/bin/061.rs\"\n\n[[bin]]\nname = \"typical90-062\"\npath = \"src/bin/062.rs\"\n\n[[bin]]\nname = \"typical90-063\"\npath = \"src/bin/063.rs\"\n\n[[bin]]\nname = \"typical90-064\"\npath = \"src/bin/064.rs\"\n\n[[bin]]\nname = \"typical90-065\"\npath = \"src/bin/065.rs\"\n\n[[bin]]\nname = \"typical90-066\"\npath = \"src/bin/066.rs\"\n\n[[bin]]\nname = \"typical90-067\"\npath = \"src/bin/067.rs\"\n\n[[bin]]\nname = \"typical90-068\"\npath = \"src/bin/068.rs\"\n\n[[bin]]\nname = \"typical90-069\"\npath = \"src/bin/069.rs\"\n\n[[bin]]\nname = \"typical90-070\"\npath = \"src/bin/070.rs\"\n\n[[bin]]\nname = \"typical90-071\"\npath = \"src/bin/071.rs\"\n\n[[bin]]\nname = \"typical90-072\"\npath = \"src/bin/072.rs\"\n\n[[bin]]\nname = \"typical90-073\"\npath = \"src/bin/073.rs\"\n\n[[bin]]\nname = \"typical90-074\"\npath = \"src/bin/074.rs\"\n\n[[bin]]\nname = \"typical90-075\"\npath = \"src/bin/075.rs\"\n\n[[bin]]\nname = \"typical90-076\"\npath = \"src/bin/076.rs\"\n\n[[bin]]\nname = \"typical90-077\"\npath = \"src/bin/077.rs\"\n\n[[bin]]\nname = \"typical90-078\"\npath = \"src/bin/078.rs\"\n\n[[bin]]\nname = \"typical90-079\"\npath = \"src/bin/079.rs\"\n\n[[bin]]\nname = \"typical90-080\"\npath = \"src/bin/080.rs\"\n\n[[bin]]\nname = \"typical90-081\"\npath = \"src/bin/081.rs\"\n\n[[bin]]\nname = \"typical90-082\"\npath = \"src/bin/082.rs\"\n\n[[bin]]\nname = \"typical90-083\"\npath = \"src/bin/083.rs\"\n\n[[bin]]\nname = \"typical90-084\"\npath = \"src/bin/084.rs\"\n\n[[bin]]\nname = \"typical90-085\"\npath = \"src/bin/085.rs\"\n\n[[bin]]\nname = \"typical90-086\"\npath = \"src/bin/086.rs\"\n\n[[bin]]\nname = \"typical90-087\"\npath = \"src/bin/087.rs\"\n\n[[bin]]\nname = \"typical90-088\"\npath = \"src/bin/088.rs\"\n\n[[bin]]\nname = \"typical90-089\"\npath = \"src/bin/089.rs\"\n\n[[bin]]\nname = \"typical90-090\"\npath = \"src/bin/090.rs\"\n\n[dependencies]\nproconio = \"=0.3.6\"\n\n[dev-dependencies]\n",
+    "src": {
+      "bin": {
+        "001.rs": "fn main() {\n    todo!();\n}\n",
+        "002.rs": "fn main() {\n    todo!();\n}\n",
+        "003.rs": "fn main() {\n    todo!();\n}\n",
+        "004.rs": "fn main() {\n    todo!();\n}\n",
+        "005.rs": "fn main() {\n    todo!();\n}\n",
+        "006.rs": "fn main() {\n    todo!();\n}\n",
+        "007.rs": "fn main() {\n    todo!();\n}\n",
+        "008.rs": "fn main() {\n    todo!();\n}\n",
+        "009.rs": "fn main() {\n    todo!();\n}\n",
+        "010.rs": "fn main() {\n    todo!();\n}\n",
+        "011.rs": "fn main() {\n    todo!();\n}\n",
+        "012.rs": "fn main() {\n    todo!();\n}\n",
+        "013.rs": "fn main() {\n    todo!();\n}\n",
+        "014.rs": "fn main() {\n    todo!();\n}\n",
+        "015.rs": "fn main() {\n    todo!();\n}\n",
+        "016.rs": "fn main() {\n    todo!();\n}\n",
+        "017.rs": "fn main() {\n    todo!();\n}\n",
+        "018.rs": "fn main() {\n    todo!();\n}\n",
+        "019.rs": "fn main() {\n    todo!();\n}\n",
+        "020.rs": "fn main() {\n    todo!();\n}\n",
+        "021.rs": "fn main() {\n    todo!();\n}\n",
+        "022.rs": "fn main() {\n    todo!();\n}\n",
+        "023.rs": "fn main() {\n    todo!();\n}\n",
+        "024.rs": "fn main() {\n    todo!();\n}\n",
+        "025.rs": "fn main() {\n    todo!();\n}\n",
+        "026.rs": "fn main() {\n    todo!();\n}\n",
+        "027.rs": "fn main() {\n    todo!();\n}\n",
+        "028.rs": "fn main() {\n    todo!();\n}\n",
+        "029.rs": "fn main() {\n    todo!();\n}\n",
+        "030.rs": "fn main() {\n    todo!();\n}\n",
+        "031.rs": "fn main() {\n    todo!();\n}\n",
+        "032.rs": "fn main() {\n    todo!();\n}\n",
+        "033.rs": "fn main() {\n    todo!();\n}\n",
+        "034.rs": "fn main() {\n    todo!();\n}\n",
+        "035.rs": "fn main() {\n    todo!();\n}\n",
+        "036.rs": "fn main() {\n    todo!();\n}\n",
+        "037.rs": "fn main() {\n    todo!();\n}\n",
+        "038.rs": "fn main() {\n    todo!();\n}\n",
+        "039.rs": "fn main() {\n    todo!();\n}\n",
+        "040.rs": "fn main() {\n    todo!();\n}\n",
+        "041.rs": "fn main() {\n    todo!();\n}\n",
+        "042.rs": "fn main() {\n    todo!();\n}\n",
+        "043.rs": "fn main() {\n    todo!();\n}\n",
+        "044.rs": "fn main() {\n    todo!();\n}\n",
+        "045.rs": "fn main() {\n    todo!();\n}\n",
+        "046.rs": "fn main() {\n    todo!();\n}\n",
+        "047.rs": "fn main() {\n    todo!();\n}\n",
+        "048.rs": "fn main() {\n    todo!();\n}\n",
+        "049.rs": "fn main() {\n    todo!();\n}\n",
+        "050.rs": "fn main() {\n    todo!();\n}\n",
+        "051.rs": "fn main() {\n    todo!();\n}\n",
+        "052.rs": "fn main() {\n    todo!();\n}\n",
+        "053.rs": "fn main() {\n    todo!();\n}\n",
+        "054.rs": "fn main() {\n    todo!();\n}\n",
+        "055.rs": "fn main() {\n    todo!();\n}\n",
+        "056.rs": "fn main() {\n    todo!();\n}\n",
+        "057.rs": "fn main() {\n    todo!();\n}\n",
+        "058.rs": "fn main() {\n    todo!();\n}\n",
+        "059.rs": "fn main() {\n    todo!();\n}\n",
+        "060.rs": "fn main() {\n    todo!();\n}\n",
+        "061.rs": "fn main() {\n    todo!();\n}\n",
+        "062.rs": "fn main() {\n    todo!();\n}\n",
+        "063.rs": "fn main() {\n    todo!();\n}\n",
+        "064.rs": "fn main() {\n    todo!();\n}\n",
+        "065.rs": "fn main() {\n    todo!();\n}\n",
+        "066.rs": "fn main() {\n    todo!();\n}\n",
+        "067.rs": "fn main() {\n    todo!();\n}\n",
+        "068.rs": "fn main() {\n    todo!();\n}\n",
+        "069.rs": "fn main() {\n    todo!();\n}\n",
+        "070.rs": "fn main() {\n    todo!();\n}\n",
+        "071.rs": "fn main() {\n    todo!();\n}\n",
+        "072.rs": "fn main() {\n    todo!();\n}\n",
+        "073.rs": "fn main() {\n    todo!();\n}\n",
+        "074.rs": "fn main() {\n    todo!();\n}\n",
+        "075.rs": "fn main() {\n    todo!();\n}\n",
+        "076.rs": "fn main() {\n    todo!();\n}\n",
+        "077.rs": "fn main() {\n    todo!();\n}\n",
+        "078.rs": "fn main() {\n    todo!();\n}\n",
+        "079.rs": "fn main() {\n    todo!();\n}\n",
+        "080.rs": "fn main() {\n    todo!();\n}\n",
+        "081.rs": "fn main() {\n    todo!();\n}\n",
+        "082.rs": "fn main() {\n    todo!();\n}\n",
+        "083.rs": "fn main() {\n    todo!();\n}\n",
+        "084.rs": "fn main() {\n    todo!();\n}\n",
+        "085.rs": "fn main() {\n    todo!();\n}\n",
+        "086.rs": "fn main() {\n    todo!();\n}\n",
+        "087.rs": "fn main() {\n    todo!();\n}\n",
+        "088.rs": "fn main() {\n    todo!();\n}\n",
+        "089.rs": "fn main() {\n    todo!();\n}\n",
+        "090.rs": "fn main() {\n    todo!();\n}\n"
+      }
+    },
+    "testcases": {
+      "001": {
+        "in": {},
+        "out": {}
+      },
+      "001.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      3 34\n      1\n      8 13 26\n    out: |\n      13\n  - name: sample2\n    in: |\n      7 45\n      2\n      7 11 16 20 28 34 38\n    out: |\n      12\n  - name: sample3\n    in: |\n      3 100\n      1\n      28 54 81\n    out: |\n      46\n  - name: sample4\n    in: |\n      3 100\n      2\n      28 54 81\n    out: |\n      26\n  - name: sample5\n    in: |\n      20 1000\n      4\n      51 69 102 127 233 295 350 388 417 466 469 523 553 587 720 739 801 855 926 954\n    out: |\n      170\n\nextend:\n  - type: Text\n    path: \"./001\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "002": {
+        "in": {},
+        "out": {}
+      },
+      "002.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      2\n    out: |\n      ()\n  - name: sample2\n    in: |\n      3\n    out: >\n  - name: sample3\n    in: |\n      4\n    out: |\n      (())\n      ()()\n  - name: sample4\n    in: |\n      10\n    out: |\n      ((((()))))\n      (((()())))\n      (((())()))\n      (((()))())\n      (((())))()\n      ((()(())))\n      ((()()()))\n      ((()())())\n      ((()()))()\n      ((())(()))\n      ((())()())\n      ((())())()\n      ((()))(())\n      ((()))()()\n      (()((())))\n      (()(()()))\n      (()(())())\n      (()(()))()\n      (()()(()))\n      (()()()())\n      (()()())()\n      (()())(())\n      (()())()()\n      (())((()))\n      (())(()())\n      (())(())()\n      (())()(())\n      (())()()()\n      ()(((())))\n      ()((()()))\n      ()((())())\n      ()((()))()\n      ()(()(()))\n      ()(()()())\n      ()(()())()\n      ()(())(())\n      ()(())()()\n      ()()((()))\n      ()()(()())\n      ()()(())()\n      ()()()(())\n      ()()()()()\n\nextend:\n  - type: Text\n    path: \"./002\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "003": {
+        "in": {},
+        "out": {}
+      },
+      "003.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      3\n      1 2\n      2 3\n    out: |\n      3\n  - name: sample2\n    in: |\n      5\n      1 2\n      2 3\n      3 4\n      3 5\n    out: |\n      4\n  - name: sample3\n    in: |\n      10\n      1 2\n      1 3\n      2 4\n      4 5\n      4 6\n      3 7\n      7 8\n      8 9\n      8 10\n    out: |\n      8\n  - name: sample4\n    in: |\n      31\n      1 2\n      1 3\n      2 4\n      2 5\n      3 6\n      3 7\n      4 8\n      4 9\n      5 10\n      5 11\n      6 12\n      6 13\n      7 14\n      7 15\n      8 16\n      8 17\n      9 18\n      9 19\n      10 20\n      10 21\n      11 22\n      11 23\n      12 24\n      12 25\n      13 26\n      13 27\n      14 28\n      14 29\n      15 30\n      15 31\n    out: |\n      9\n\nextend:\n  - type: Text\n    path: \"./003\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "004": {
+        "in": {},
+        "out": {}
+      },
+      "004.yml": "---\ntype: Batch\ntimelimit: 5s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      3 3\n      1 1 1\n      1 1 1\n      1 1 1\n    out: |\n      5 5 5\n      5 5 5\n      5 5 5\n  - name: sample2\n    in: |\n      4 4\n      3 1 4 1\n      5 9 2 6\n      5 3 5 8\n      9 7 9 3\n    out: |\n      28 28 25 26\n      39 33 40 34\n      38 38 36 31\n      41 41 39 43\n  - name: sample3\n    in: |\n      2 10\n      31 41 59 26 53 58 97 93 23 84\n      62 64 33 83 27 95 2 88 41 97\n    out: |\n      627 629 598 648 592 660 567 653 606 662\n      623 633 651 618 645 650 689 685 615 676\n  - name: sample4\n    in: |\n      10 10\n      83 86 77 65 93 85 86 92 99 71\n      62 77 90 59 63 76 90 76 72 86\n      61 68 67 79 82 80 62 73 67 85\n      79 52 72 58 69 67 93 56 61 92\n      79 73 71 69 84 87 98 74 65 70\n      63 76 91 80 56 73 62 70 96 81\n      55 75 84 77 86 55 96 79 63 57\n      74 95 82 95 64 67 84 64 93 50\n      87 58 76 78 88 84 53 51 54 99\n      82 60 76 68 89 62 76 86 94 89\n    out: |\n      1479 1471 1546 1500 1518 1488 1551 1466 1502 1546\n      1414 1394 1447 1420 1462 1411 1461 1396 1443 1445\n      1388 1376 1443 1373 1416 1380 1462 1372 1421 1419\n      1345 1367 1413 1369 1404 1368 1406 1364 1402 1387\n      1416 1417 1485 1429 1460 1419 1472 1417 1469 1480\n      1410 1392 1443 1396 1466 1411 1486 1399 1416 1447\n      1397 1372 1429 1378 1415 1408 1431 1369 1428 1450\n      1419 1393 1472 1401 1478 1437 1484 1425 1439 1498\n      1366 1390 1438 1378 1414 1380 1475 1398 1438 1409\n      1425 1442 1492 1442 1467 1456 1506 1417 1452 1473\n\nextend:\n  - type: Text\n    path: \"./004\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "005": {
+        "in": {},
+        "out": {}
+      },
+      "005.yml": "---\ntype: Batch\ntimelimit: 5s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      3 7 3\n      1 4 9\n    out: |\n      3\n  - name: sample2\n    in: |\n      5 2 3\n      1 4 9\n    out: |\n      81\n  - name: sample3\n    in: |\n      10000 27 7\n      1 3 4 6 7 8 9\n    out: |\n      989112238\n  - name: sample4\n    in: |\n      1000000000000000000 29 6\n      1 2 4 5 7 9\n    out: |\n      853993813\n  - name: sample5\n    in: |\n      1000000000000000000 957 7\n      1 2 3 5 6 7 9\n    out: |\n      205384995\n\nextend:\n  - type: Text\n    path: \"./005\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "006": {
+        "in": {},
+        "out": {}
+      },
+      "006.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      7 3\n      atcoder\n    out: |\n      acd\n  - name: sample2\n    in: |\n      14 5\n      kittyonyourlap\n    out: |\n      inlap\n\nextend:\n  - type: Text\n    path: \"./006\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "007": {
+        "in": {},
+        "out": {}
+      },
+      "007.yml": "---\ntype: Batch\ntimelimit: 3s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      4\n      4000 4400 5000 3200\n      3\n      3312\n      2992\n      4229\n    out: |\n      112\n      208\n      171\n  - name: sample2\n    in: |\n      1\n      4000\n      10\n      3582\n      3538\n      3320\n      3312\n      3296\n      3257\n      3111\n      3040\n      3013\n      2994\n    out: |\n      418\n      462\n      680\n      688\n      704\n      743\n      889\n      960\n      987\n      1006\n  - name: sample3\n    in: |\n      10\n      869120000 998244353 777777777 123456789 100100100 464646464 987654321 252525252 869120001 1000000000\n      10\n      4229\n      20210406\n      1\n      268435456\n      3582\n      536870912\n      1000000000\n      869120\n      99999999\n      869120001\n    out: |\n      100095871\n      79889694\n      100100099\n      15910204\n      100096518\n      72224448\n      0\n      99230980\n      100101\n      0\n  - name: sample4\n    in: |\n      100\n      298750376 229032640 602876667 944779015 909539868 533609371 231368330 445484152 408704870 850216874 349286798 30417810 807260002 554049450 40706045 380488344 749325840 801881841 459457853 66691229 5235900 8100458 46697277 997429858 827651689 790051948 981897272 271364774 536232393 997361572 449659237 602191750 294800444 346669663 792837293 277667068 997282249 468293808 444906878 702693341 894286137 845317003 27053625 926547765 739689211 447395911 902031510 326127348 582956343 842918193 235655766 844300842 438389323 406413067 862896425 464876303 68833418 76340212 911399808 745744264 551223563 854507876 196296968 52144186 431165823 275217640 424495332 847375861 337078801 83054466 648322745 694789156 301518763 319851750 432518459 772897937 630628124 581390864 313132255 350770227 642944345 677742851 448945480 688009163 160941957 290297295 5532462 823543277 19634445 15791361 193309093 66202596 72364149 743270896 297240520 264035189 898589962 59916738 307942952 403411309\n      30\n      930579110\n      22697034\n      44652533\n      280533771\n      753567118\n      684927419\n      923477579\n      557613803\n      779616458\n      389130756\n      323671659\n      3117850\n      408004003\n      224808850\n      18421958\n      359047808\n      364572866\n      334631363\n      854759331\n      647435074\n      826055423\n      668443532\n      620408208\n      32237184\n      67299071\n      251185742\n      217292659\n      16181227\n      850865411\n      218577687\n    out: |\n      4031345\n      3062589\n      2044744\n      2866703\n      4241278\n      3081744\n      3070186\n      3564353\n      6718521\n      8642412\n      2455689\n      2118050\n      700867\n      4223790\n      1212487\n      8277581\n      13802639\n      2447438\n      251455\n      887671\n      1596266\n      9299319\n      10219916\n      1819374\n      607842\n      12849447\n      11739981\n      389866\n      648537\n      10454953\n\nextend:\n  - type: Text\n    path: \"./007\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "008": {
+        "in": {},
+        "out": {}
+      },
+      "008.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      10\n      attcordeer\n    out: |\n      4\n  - name: sample2\n    in: |\n      41\n      btwogablwetwoiehocghiewobadegwhoihegnldir\n    out: |\n      2\n  - name: sample3\n    in: |\n      140\n      aaaaaaaaaaaaaaaaaaaattttttttttttttttttttccccccccccccccccccccooooooooooooooooooooddddddddddddddddddddeeeeeeeeeeeeeeeeeeeerrrrrrrrrrrrrrrrrrrr\n    out: |\n      279999993\n\nextend:\n  - type: Text\n    path: \"./008\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "009": {
+        "in": {},
+        "out": {}
+      },
+      "009.yml": "---\ntype: Batch\ntimelimit: 3s\nmatch:\n  Float:\n    relative_error: 1e-7\n    absolute_error: 1e-7\n\ncases:\n  - name: sample1\n    in: |\n      3\n      0 0\n      0 10\n      10 10\n    out: |\n      90\n  - name: sample2\n    in: |\n      5\n      8 6\n      9 1\n      2 0\n      1 0\n      0 1\n    out: |\n      171.869897645844\n  - name: sample3\n    in: |\n      10\n      0 0\n      1 7\n      2 6\n      2 8\n      3 5\n      5 5\n      6 7\n      7 1\n      7 9\n      8 8\n    out: |\n      180\n  - name: sample4\n    in: |\n      40\n      298750376 229032640\n      602876667 944779015\n      909539868 533609371\n      231368330 445484152\n      408704870 850216874\n      349286798 30417810\n      807260002 554049450\n      40706045 380488344\n      749325840 801881841\n      459457853 66691229\n      5235900 8100458\n      46697277 997429858\n      827651689 790051948\n      981897272 271364774\n      536232393 997361572\n      449659237 602191750\n      294800444 346669663\n      792837293 277667068\n      997282249 468293808\n      444906878 702693341\n      894286137 845317003\n      27053625 926547765\n      739689211 447395911\n      902031510 326127348\n      582956343 842918193\n      235655766 844300842\n      438389323 406413067\n      862896425 464876303\n      68833418 76340212\n      911399808 745744264\n      551223563 854507876\n      196296968 52144186\n      431165823 275217640\n      424495332 847375861\n      337078801 83054466\n      648322745 694789156\n      301518763 319851750\n      432518459 772897937\n      630628124 581390864\n      313132255 350770227\n    out: |\n      179.9834340684232\n\nextend:\n  - type: Text\n    path: \"./009\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "010": {
+        "in": {},
+        "out": {}
+      },
+      "010.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      7\n      1 72\n      2 78\n      2 94\n      1 23\n      2 89\n      1 40\n      1 75\n      1\n      2 6\n    out: |\n      63 261\n  - name: sample2\n    in: |\n      7\n      1 72\n      2 78\n      2 94\n      1 23\n      2 89\n      1 40\n      1 75\n      10\n      1 3\n      2 4\n      3 5\n      4 6\n      5 7\n      1 5\n      2 6\n      3 7\n      1 6\n      2 7\n    out: |\n      72 172\n      23 172\n      23 183\n      63 89\n      115 89\n      95 261\n      63 261\n      138 183\n      135 261\n      138 261\n  - name: sample3\n    in: |\n      1\n      1 100\n      3\n      1 1\n      1 1\n      1 1\n    out: |\n      100 0\n      100 0\n      100 0\n  - name: sample4\n    in: |\n      20\n      2 90\n      1 67\n      2 9\n      2 17\n      2 85\n      2 43\n      2 11\n      1 32\n      2 16\n      1 19\n      2 65\n      1 14\n      1 51\n      2 94\n      1 4\n      1 55\n      2 90\n      1 89\n      1 35\n      2 81\n      20\n      3 17\n      5 5\n      11 11\n      8 10\n      3 13\n      2 6\n      3 7\n      3 5\n      12 18\n      4 8\n      3 16\n      6 8\n      3 20\n      1 12\n      1 6\n      5 16\n      3 10\n      17 19\n      4 4\n      7 15\n    out: |\n      175 430\n      0 85\n      0 65\n      51 16\n      116 246\n      67 154\n      0 165\n      0 111\n      213 184\n      32 156\n      175 340\n      32 54\n      299 511\n      132 336\n      67 244\n      175 314\n      51 181\n      124 90\n      0 17\n      120 186\n\nextend:\n  - type: Text\n    path: \"./010\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "011": {
+        "in": {},
+        "out": {}
+      },
+      "011.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      1\n      12 3 69853\n    out: |\n      69853\n  - name: sample2\n    in: |\n      3\n      7 3 200000\n      3 2 100000\n      5 3 150000\n    out: |\n      350000\n  - name: sample3\n    in: |\n      8\n      376 640 602876667\n      4015 1868 533609371\n      3330 152 408704870\n      1874 798 30417810\n      2 1450 40706045\n      3344 1840 801881841\n      2853 1229 5235900\n      458 1277 997429858\n    out: |\n      1744196082\n  - name: sample4\n    in: |\n      20\n      376 640 602876667\n      4015 868 533609371\n      3330 152 408704870\n      1874 798 30417810\n      2 450 40706045\n      3344 840 801881841\n      2853 229 5235900\n      458 277 997429858\n      1689 948 981897272\n      4774 393 997361572\n      4237 750 294800444\n      4663 293 277667068\n      2249 808 444906878\n      3341 137 845317003\n      3625 765 739689211\n      911 510 326127348\n      1343 193 235655766\n      842 323 406413067\n      1425 303 68833418\n      212 808 745744264\n    out: |\n      6583558066\n  - name: sample5\n    in: |\n      30\n      376 140 602876667\n      4015 368 533609371\n      3330 152 408704870\n      1874 298 30417810\n      2 450 40706045\n      3344 340 801881841\n      2853 229 5235900\n      458 277 997429858\n      1689 448 981897272\n      4774 393 997361572\n      4237 250 294800444\n      4663 293 277667068\n      2249 308 444906878\n      3341 137 845317003\n      3625 265 739689211\n      911 10 326127348\n      1343 193 235655766\n      842 323 406413067\n      1425 303 68833418\n      212 308 745744264\n      3563 376 196296968\n      4186 323 275217640\n      332 361 337078801\n      4466 245 694789156\n      3763 250 432518459\n      2937 124 581390864\n      2255 227 642944345\n      2851 480 688009163\n      1957 295 5532462\n      3277 445 15791361\n    out: |\n      11420667389\n\nextend:\n  - type: Text\n    path: \"./011\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "012": {
+        "in": {},
+        "out": {}
+      },
+      "012.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      3 3\n      10\n      1 2 2\n      1 1 1\n      2 1 1 2 2\n      1 3 2\n      2 1 1 2 2\n      2 2 2 3 2\n      1 2 3\n      1 2 1\n      2 1 1 2 2\n      2 1 1 3 3\n    out: |\n      No\n      No\n      Yes\n      Yes\n      No\n  - name: sample2\n    in: |\n      1 1\n      3\n      2 1 1 1 1\n      1 1 1\n      2 1 1 1 1\n    out: |\n      No\n      Yes\n  - name: sample3\n    in: |\n      5 5\n      42\n      2 3 4 3 4\n      2 3 2 3 2\n      1 4 1\n      2 4 1 2 2\n      1 1 2\n      1 4 5\n      1 3 3\n      2 4 2 1 3\n      1 3 5\n      2 2 4 2 3\n      2 2 4 2 5\n      2 3 4 5 1\n      2 3 1 2 2\n      2 3 1 1 2\n      2 2 4 5 2\n      2 3 2 5 3\n      1 4 3\n      2 3 3 3 5\n      2 3 1 3 2\n      1 1 5\n      2 4 4 5 3\n      1 1 4\n      2 1 3 2 5\n      2 4 3 1 4\n      2 2 3 3 3\n      1 2 1\n      1 2 5\n      2 1 4 5 3\n      2 4 4 2 5\n      2 4 2 2 4\n      1 2 2\n      2 4 1 5 2\n      1 2 4\n      2 3 1 4 1\n      1 4 4\n      2 3 2 2 1\n      2 1 1 5 2\n      1 4 2\n      2 4 2 3 5\n      1 3 2\n      1 3 4\n      1 2 3\n    out: |\n      No\n      No\n      No\n      No\n      No\n      No\n      No\n      No\n      No\n      No\n      No\n      No\n      No\n      No\n      No\n      No\n      No\n      No\n      No\n      No\n      No\n      No\n      No\n      No\n      Yes\n\nextend:\n  - type: Text\n    path: \"./012\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "013": {
+        "in": {},
+        "out": {}
+      },
+      "013.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      7 9\n      1 2 2\n      1 3 3\n      2 5 2\n      3 4 1\n      3 5 4\n      4 7 5\n      5 6 1\n      5 7 6\n      6 7 3\n    out: |\n      8\n      8\n      9\n      9\n      8\n      8\n      8\n  - name: sample2\n    in: |\n      4 3\n      1 2 1\n      2 3 10\n      3 4 100\n    out: |\n      111\n      111\n      111\n      111\n  - name: sample3\n    in: |\n      4 3\n      1 2 314\n      1 3 159\n      1 4 265\n    out: |\n      265\n      893\n      583\n      265\n\nextend:\n  - type: Text\n    path: \"./013\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "014": {
+        "in": {},
+        "out": {}
+      },
+      "014.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      1\n      869\n      120\n    out: |\n      749\n  - name: sample2\n    in: |\n      6\n      8 6 9 1 2 0\n      1 5 7 2 3 9\n    out: |\n      5\n  - name: sample3\n    in: |\n      10\n      31 41 59 26 53 58 97 93 23 84\n      17 32 5 8 7 56 88 77 29 35\n    out: |\n      211\n  - name: sample4\n    in: |\n      20\n      804289382 846930886 681692776 714636914 957747792 424238335 719885386 649760491 596516649 189641420 25202361 350490026 783368690 102520058 44897761 967513925 365180539 540383425 304089172 303455735\n      35005211 521595368 294702567 726956428 336465782 861021530 278722862 233665123 145174065 468703135 101513928 801979801 315634021 635723058 369133068 125898166 59961392 89018454 628175011 656478041\n    out: |\n      2736647674\n\nextend:\n  - type: Text\n    path: \"./014\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "015": {
+        "in": {},
+        "out": {}
+      },
+      "015.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      1\n    out: |\n      1\n  - name: sample2\n    in: |\n      2\n    out: |\n      3\n      2\n  - name: sample3\n    in: |\n      3\n    out: |\n      7\n      4\n      3\n  - name: sample4\n    in: |\n      4\n    out: |\n      15\n      7\n      5\n      4\n  - name: sample5\n    in: |\n      7\n    out: |\n      127\n      33\n      18\n      13\n      10\n      8\n      7\n  - name: sample6\n    in: |\n      20\n    out: |\n      1048575\n      17710\n      2744\n      906\n      430\n      250\n      167\n      118\n      90\n      75\n      65\n      56\n      48\n      41\n      35\n      30\n      26\n      23\n      21\n      20\n  - name: sample7\n    in: |\n      50\n    out: |\n      898961330\n      951279874\n      262271567\n      14341526\n      1985602\n      466851\n      153365\n      63191\n      30623\n      16687\n      9987\n      6453\n      4354\n      3070\n      2290\n      1790\n      1427\n      1138\n      910\n      735\n      605\n      512\n      448\n      405\n      375\n      350\n      326\n      303\n      281\n      260\n      240\n      221\n      203\n      186\n      170\n      155\n      141\n      128\n      116\n      105\n      95\n      86\n      78\n      71\n      65\n      60\n      56\n      53\n      51\n      50\n\nextend:\n  - type: Text\n    path: \"./015\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "016": {
+        "in": {},
+        "out": {}
+      },
+      "016.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      227\n      21 47 56\n    out: |\n      5\n  - name: sample2\n    in: |\n      9999\n      1 5 10\n    out: |\n      1004\n  - name: sample3\n    in: |\n      998244353\n      314159 265358 97932\n    out: |\n      3333\n  - name: sample4\n    in: |\n      100000000\n      10001 10002 10003\n    out: |\n      9998\n\nextend:\n  - type: Text\n    path: \"./016\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "017": {
+        "in": {},
+        "out": {}
+      },
+      "017.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      6 3\n      2 5\n      1 4\n      1 3\n    out: |\n      2\n  - name: sample2\n    in: |\n      250 10\n      13 218\n      17 99\n      24 180\n      53 115\n      96 97\n      111 158\n      124 164\n      135 227\n      158 177\n      204 224\n    out: |\n      10\n  - name: sample3\n    in: |\n      100 10\n      1 2\n      1 3\n      1 4\n      1 5\n      1 6\n      1 7\n      1 8\n      1 9\n      1 10\n      1 11\n    out: |\n      0\n  - name: sample4\n    in: |\n      100 10\n      1 100\n      2 99\n      3 98\n      4 97\n      5 96\n      6 95\n      7 94\n      8 93\n      9 92\n      10 91\n    out: |\n      0\n  - name: sample5\n    in: |\n      1000 40\n      12 43\n      23 59\n      32 118\n      44 751\n      68 136\n      70 168\n      85 328\n      88 809\n      92 981\n      95 540\n      98 772\n      98 903\n      125 896\n      173 737\n      199 325\n      212 369\n      227 587\n      230 374\n      287 442\n      306 926\n      314 858\n      316 371\n      318 493\n      337 506\n      384 887\n      387 493\n      394 457\n      404 652\n      414 527\n      422 920\n      441 730\n      445 620\n      468 602\n      482 676\n      568 857\n      587 966\n      653 757\n      710 928\n      764 927\n      778 916\n    out: |\n      229\n\nextend:\n  - type: Text\n    path: \"./017\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "018": {
+        "in": {},
+        "out": {}
+      },
+      "018.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch:\n  Float:\n    relative_error: 1e-7\n    absolute_error: 1e-7\n\ncases:\n  - name: sample1\n    in: |\n      4\n      2 1 1\n      4\n      0\n      1\n      2\n      3\n    out: |\n      0.000000000000\n      24.094842552111\n      54.735610317245\n      45.000000000000\n  - name: sample2\n    in: |\n      5121\n      312000000 4123 3314\n      6\n      123\n      12\n      445\n      4114\n      42\n      1233\n    out: |\n      4.322765775902\n      0.421184234768\n      15.640867693969\n      35.396039162484\n      1.475665637902\n      43.338582976959\n\nextend:\n  - type: Text\n    path: \"./018\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "019": {
+        "in": {},
+        "out": {}
+      },
+      "019.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      3\n      6 2 3 9 8 6\n    out: |\n      2\n  - name: sample2\n    in: |\n      3\n      1 3 5 5 3 1\n    out: |\n      0\n  - name: sample3\n    in: |\n      4\n      1 2 4 8 16 32 64 128\n    out: |\n      85\n  - name: sample4\n    in: |\n      15\n      73 8 55 26 97 48 37 47 35 55 5 17 62 2 60 23 99 73 34 75 7 46 82 84 29 41 32 31 52 32\n    out: |\n      207\n\nextend:\n  - type: Text\n    path: \"./019\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "020": {
+        "in": {},
+        "out": {}
+      },
+      "020.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      4 3 2\n    out: |\n      Yes\n  - name: sample2\n    in: |\n      16 3 2\n    out: |\n      No\n  - name: sample3\n    in: |\n      8 3 2\n    out: |\n      No\n\nextend:\n  - type: Text\n    path: \"./020\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "021": {
+        "in": {},
+        "out": {}
+      },
+      "021.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      4 7\n      1 2\n      2 1\n      2 3\n      4 3\n      4 1\n      1 4\n      2 3\n    out: |\n      3\n  - name: sample2\n    in: |\n      100 1\n      1 2\n    out: |\n      0\n\nextend:\n  - type: Text\n    path: \"./021\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "022": {
+        "in": {},
+        "out": {}
+      },
+      "022.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      2 2 3\n    out: |\n      4\n  - name: sample2\n    in: |\n      2 2 4\n    out: |\n      1\n  - name: sample3\n    in: |\n      1000000000000000000 999999999999999999 999999999999999998\n    out: |\n      2999999999999999994\n\nextend:\n  - type: Text\n    path: \"./022\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "023": {
+        "in": {},
+        "out": {}
+      },
+      "023.yml": "---\ntype: Batch\ntimelimit: 8s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      1 3\n      ...\n    out: |\n      5\n  - name: sample2\n    in: |\n      3 3\n      .#.\n      #..\n      .##\n    out: |\n      13\n  - name: sample3\n    in: |\n      8 9\n      ######.##\n      ####..##.\n      ..#...#..\n      ###...###\n      #....##.#\n      .##......\n      #.####..#\n      #.#######\n    out: |\n      273768\n  - name: sample4\n    in: |\n      17 17\n      .####...#.....#.#\n      .#....#.#####...#\n      #...##.##...#..##\n      ..#..####..#...##\n      .#..#..#.#.##...#\n      .#.#.#...#.##..#.\n      #...#..#..##..###\n      ###.#..###..###..\n      ...#.##.##.#....#\n      ..####....#.#...#\n      .##...##.#.#...#.\n      ..########...###.\n      #..##....#.......\n      ##.##..###.#.##..\n      .##....#........#\n      ....#####..##.#..\n      .###...##..##.#..\n    out: |\n      314465173\n  - name: sample5\n    in: |\n      22 18\n      .##.##.#.#.#...##.\n      ####.#..###.#.#..#\n      #####.##...##.###.\n      ...#.#.#.##.##.###\n      ..#.##.#.#....#...\n      #.###.##....###..#\n      ....#####...#...#.\n      .#..##..#..###....\n      ....#..##.#.#..#.#\n      ###.#.....#..##.#.\n      #..#..#.#.##..###.\n      #...#....##..###..\n      ..#...#..###..##..\n      .#....#.#.#..###.#\n      ##.#.#..#..###..##\n      ....###.##.##.##..\n      #...####.#.#..##..\n      ..#.###.###.###.##\n      #...##.#.#.#...#.#\n      #..###..########..\n      #.##.#####.#..#.##\n      #..#........#...#.\n    out: |\n      47296634\n\nextend:\n  - type: Text\n    path: \"./023\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "024": {
+        "in": {},
+        "out": {}
+      },
+      "024.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      2 5\n      1 3\n      2 1\n    out: |\n      Yes\n  - name: sample2\n    in: |\n      3 1\n      7 8 9\n      7 8 9\n    out: |\n      No\n  - name: sample3\n    in: |\n      7 999999999\n      3 1 4 1 5 9 2\n      1 2 3 4 5 6 7\n    out: |\n      Yes\n\nextend:\n  - type: Text\n    path: \"./024\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "025": {
+        "in": {},
+        "out": {}
+      },
+      "025.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      999 434\n    out: |\n      2\n  - name: sample2\n    in: |\n      255 15\n    out: |\n      2\n  - name: sample3\n    in: |\n      9999999999 1\n    out: |\n      0\n\nextend:\n  - type: Text\n    path: \"./025\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "026": {
+        "in": {},
+        "out": {}
+      },
+      "026.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      4\n      1 2\n      2 3\n      2 4\n    out: |\n      3 4\n  - name: sample2\n    in: |\n      6\n      1 3\n      2 4\n      3 5\n      2 5\n      3 6\n    out: |\n      1 2 6\n\nextend:\n  - type: Text\n    path: \"./026\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "027": {
+        "in": {},
+        "out": {}
+      },
+      "027.yml": "---\ntype: Batch\ntimelimit: 1s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      5\n      e869120\n      atcoder\n      e869120\n      square1001\n      square1001\n    out: |\n      1\n      2\n      4\n  - name: sample2\n    in: |\n      4\n      taro\n      hanako\n      yuka\n      takashi\n    out: |\n      1\n      2\n      3\n      4\n  - name: sample3\n    in: |\n      10\n      square869120\n      square869120\n      square869120\n      square869120\n      square869120\n      square869120\n      square869120\n      square869120\n      square869120\n      square869120\n    out: |\n      1\n\nextend:\n  - type: Text\n    path: \"./027\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "028": {
+        "in": {},
+        "out": {}
+      },
+      "028.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      2\n      1 1 3 2\n      2 1 4 2\n    out: |\n      2\n      1\n  - name: sample2\n    in: |\n      2\n      1 1 3 4\n      3 4 6 5\n    out: |\n      9\n      0\n  - name: sample3\n    in: |\n      20\n      61 98 76 100\n      70 99 95 100\n      10 64 96 91\n      12 37 99 66\n      63 93 65 95\n      16 18 18 67\n      30 47 88 56\n      33 6 38 8\n      37 19 40 68\n      4 56 12 84\n      3 16 92 78\n      39 24 67 96\n      46 1 69 57\n      40 34 65 65\n      20 38 51 92\n      5 32 100 73\n      7 33 92 55\n      4 46 97 85\n      43 18 57 87\n      15 29 54 74\n    out: |\n      1806\n      990\n      1013\n      1221\n      567\n      839\n      413\n      305\n      228\n      121\n      58\n      40\n      0\n      0\n      0\n      0\n      0\n      0\n      0\n      0\n\nextend:\n  - type: Text\n    path: \"./028\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "029": {
+        "in": {},
+        "out": {}
+      },
+      "029.yml": "---\ntype: Batch\ntimelimit: 4s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      100 4\n      27 100\n      8 39\n      83 97\n      24 75\n    out: |\n      1\n      2\n      2\n      3\n  - name: sample2\n    in: |\n      3 5\n      1 2\n      2 2\n      2 3\n      3 3\n      1 2\n    out: |\n      1\n      2\n      3\n      4\n      4\n  - name: sample3\n    in: |\n      10 10\n      1 3\n      3 5\n      5 7\n      7 9\n      2 4\n      4 6\n      6 8\n      3 5\n      5 7\n      4 6\n    out: |\n      1\n      2\n      3\n      4\n      3\n      4\n      5\n      5\n      6\n      7\n  - name: sample4\n    in: |\n      500000 7\n      1 500000\n      500000 500000\n      1 500000\n      1 1\n      1 500000\n      500000 500000\n      1 500000\n    out: |\n      1\n      2\n      3\n      4\n      5\n      6\n      7\n\nextend:\n  - type: Text\n    path: \"./029\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "030": {
+        "in": {},
+        "out": {}
+      },
+      "030.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      15 2\n    out: |\n      5\n  - name: sample2\n    in: |\n      30 2\n    out: |\n      13\n  - name: sample3\n    in: |\n      200 4\n    out: |\n      0\n  - name: sample4\n    in: |\n      869120 1\n    out: |\n      869119\n  - name: sample5\n    in: |\n      10000000 3\n    out: |\n      6798027\n\nextend:\n  - type: Text\n    path: \"./030\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "031": {
+        "in": {},
+        "out": {}
+      },
+      "031.yml": "---\ntype: Batch\ntimelimit: 3s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      1\n      0\n      2\n    out: |\n      First\n  - name: sample2\n    in: |\n      2\n      10 10\n      10 10\n    out: |\n      Second\n  - name: sample3\n    in: |\n      1\n      1\n      1\n    out: |\n      Second\n  - name: sample4\n    in: |\n      6\n      3 1 4 1 5 9\n      2 7 1 8 2 8\n    out: |\n      Second\n  - name: sample5\n    in: |\n      6\n      1 2 3 4 5 6\n      1 2 3 4 5 6\n    out: |\n      First\n\nextend:\n  - type: Text\n    path: \"./031\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "032": {
+        "in": {},
+        "out": {}
+      },
+      "032.yml": "---\ntype: Batch\ntimelimit: 5s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      3\n      1 10 100\n      10 1 100\n      100 10 1\n      1\n      1 2\n    out: |\n      111\n  - name: sample2\n    in: |\n      4\n      1 2 3 4\n      5 6 7 8\n      9 10 11 12\n      13 14 15 16\n      3\n      1 2\n      1 3\n      2 3\n    out: |\n      -1\n  - name: sample3\n    in: |\n      3\n      1 10 100\n      10 1 100\n      100 10 1\n      0\n    out: |\n      3\n\nextend:\n  - type: Text\n    path: \"./032\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "033": {
+        "in": {},
+        "out": {}
+      },
+      "033.yml": "---\ntype: Batch\ntimelimit: 1s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      2 3\n    out: |\n      2\n  - name: sample2\n    in: |\n      3 4\n    out: |\n      4\n  - name: sample3\n    in: |\n      3 6\n    out: |\n      6\n\nextend:\n  - type: Text\n    path: \"./033\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "034": {
+        "in": {},
+        "out": {}
+      },
+      "034.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      5 1\n      1 2 3 4 5\n    out: |\n      1\n  - name: sample2\n    in: |\n      5 4\n      1 1 2 4 2\n    out: |\n      5\n  - name: sample3\n    in: |\n      10 2\n      1 2 3 4 4 3 2 1 2 3\n    out: |\n      4\n\nextend:\n  - type: Text\n    path: \"./034\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "035": {
+        "in": {},
+        "out": {}
+      },
+      "035.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      6\n      1 2\n      2 3\n      3 4\n      1 5\n      3 6\n      5\n      2 1 2\n      3 1 3 5\n      4 2 3 4 5\n      5 1 2 3 5 6\n      6 1 2 3 4 5 6\n    out: |\n      1\n      3\n      4\n      4\n      5\n  - name: sample2\n    in: |\n      6\n      1 2\n      2 3\n      3 4\n      1 5\n      3 6\n      5\n      2 1 2\n      2 3 4\n      2 4 6\n      2 1 5\n      2 2 5\n    out: |\n      1\n      1\n      2\n      1\n      2\n  - name: sample3\n    in: |\n      6\n      1 2\n      2 3\n      3 4\n      1 5\n      3 6\n      5\n      3 1 2 3\n      3 1 2 5\n      3 1 3 6\n      3 3 4 5\n      3 4 5 6\n    out: |\n      2\n      2\n      3\n      4\n      5\n\nextend:\n  - type: Text\n    path: \"./035\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "036": {
+        "in": {},
+        "out": {}
+      },
+      "036.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      3 3\n      -1 2\n      1 1\n      -2 -3\n      1\n      2\n      3\n    out: |\n      6\n      7\n      7\n  - name: sample2\n    in: |\n      5 3\n      -2 -2\n      -1 -1\n      0 0\n      1 1\n      2 2\n      5\n      3\n      1\n    out: |\n      8\n      4\n      8\n  - name: sample3\n    in: |\n      2 1\n      -1000000000 -1000000000\n      1000000000 1000000000\n      1\n    out: |\n      4000000000\n\nextend:\n  - type: Text\n    path: \"./036\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "037": {
+        "in": {},
+        "out": {}
+      },
+      "037.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      100 4\n      30 40 120\n      30 40 30\n      30 40 1500\n      30 40 40\n    out: |\n      1660\n  - name: sample2\n    in: |\n      100 4\n      13 15 31415\n      12 13 92653\n      29 33 58979\n      95 98 32384\n    out: |\n      -1\n  - name: sample3\n    in: |\n      5000 5\n      1000 1000 1000000000\n      1000 1000 1000000000\n      1000 1000 1000000000\n      1000 1000 1000000000\n      1000 1000 1000000000\n    out: |\n      5000000000\n  - name: sample4\n    in: |\n      10000 20\n      4539 6002 485976\n      1819 5162 457795\n      1854 2246 487643\n      1023 4733 393530\n      1052 6274 289577\n      1874 2436 167747\n      1457 4248 452660\n      2103 4189 174955\n      3057 5061 319316\n      4898 4953 394627\n      1313 2880 154687\n      1274 1364 259598\n      3866 5844 233027\n      1163 5036 386223\n      1234 4630 155972\n      2845 4978 442858\n      3168 5368 171601\n      3708 4407 394899\n      3924 4122 428313\n      2112 4169 441976\n    out: |\n      2727026\n\nextend:\n  - type: Text\n    path: \"./037\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "038": {
+        "in": {},
+        "out": {}
+      },
+      "038.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      4 6\n    out: |\n      12\n  - name: sample2\n    in: |\n      1000000000000000000 3\n    out: |\n      Large\n  - name: sample3\n    in: |\n      1000000000000000000 1\n    out: |\n      1000000000000000000\n\nextend:\n  - type: Text\n    path: \"./038\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "039": {
+        "in": {},
+        "out": {}
+      },
+      "039.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      2\n      1 2\n    out: |\n      1\n  - name: sample2\n    in: |\n      4\n      1 2\n      1 3\n      1 4\n    out: |\n      9\n  - name: sample3\n    in: |\n      12\n      1 2\n      3 1\n      4 2\n      2 5\n      3 6\n      3 7\n      8 4\n      4 9\n      10 5\n      11 7\n      7 12\n    out: |\n      211\n\nextend:\n  - type: Text\n    path: \"./039\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "040": {
+        "in": {},
+        "out": {}
+      },
+      "040.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      5 5\n      5 2 10 3 6\n      1 3\n      1 3\n      0\n      1 5\n      0\n    out: |\n      2\n  - name: sample2\n    in: |\n      6 10\n      8 6 9 1 2 0\n      1 3\n      2 3 4\n      1 5\n      1 5\n      1 6\n      0\n    out: |\n      0\n\nextend:\n  - type: Text\n    path: \"./040\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "041": {
+        "in": {},
+        "out": {}
+      },
+      "041.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      3\n      1 4\n      6 1\n      5 8\n    out: |\n      17\n  - name: sample2\n    in: |\n      3\n      2 2\n      2 3\n      3 2\n    out: |\n      0\n  - name: sample3\n    in: |\n      3\n      2 39\n      39 35\n      17 5\n    out: |\n      599\n  - name: sample4\n    in: |\n      10\n      72 7\n      54 25\n      97 48\n      37 47\n      34 54\n      4 16\n      62 1\n      59 22\n      99 73\n      34 75\n    out: |\n      4828\n  - name: sample5\n    in: |\n      30\n      878317816 654163251\n      686185971 65193664\n      421988001 893301255\n      337790787 848308131\n      116633641 453711858\n      147679897 275450390\n      871549713 368160131\n      945135251 515070794\n      113677189 553747963\n      648722370 798825746\n      334960984 163211483\n      477414168 849868430\n      46724716 593116536\n      424597820 84043071\n      456749260 981436379\n      167906984 546584517\n      187306934 201207913\n      535850448 43428774\n      602081737 111568378\n      607467836 80430906\n      965538187 537789555\n      69199019 485172741\n      267885487 934316143\n      883812229 276272851\n      507976072 19708905\n      951100460 639017801\n      43859603 556279043\n      300658736 79240016\n      231304846 220059094\n      854667690 399502355\n    out: |\n      607281204170558988\n\nextend:\n  - type: Text\n    path: \"./041\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "042": {
+        "in": {},
+        "out": {}
+      },
+      "042.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      1\n    out: |\n      0\n  - name: sample2\n    in: |\n      234\n    out: |\n      757186539\n\nextend:\n  - type: Text\n    path: \"./042\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "043": {
+        "in": {},
+        "out": {}
+      },
+      "043.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      3 3\n      1 1\n      3 3\n      ..#\n      #.#\n      #..\n    out: |\n      2\n  - name: sample2\n    in: |\n      3 3\n      2 1\n      2 3\n      #.#\n      ...\n      #.#\n    out: |\n      0\n  - name: sample3\n    in: |\n      4 6\n      2 1\n      1 5\n      ...#..\n      .#.##.\n      .#....\n      ...##.\n    out: |\n      5\n\nextend:\n  - type: Text\n    path: \"./043\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "044": {
+        "in": {},
+        "out": {}
+      },
+      "044.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      8 5\n      6 17 2 4 17 19 1 7\n      2 0 0\n      1 7 2\n      1 2 6\n      1 4 5\n      3 4 0\n    out: |\n      4\n  - name: sample2\n    in: |\n      9 6\n      16 7 10 2 9 18 15 20 5\n      2 0 0\n      1 1 4\n      2 0 0\n      1 8 5\n      2 0 0\n      3 6 0\n    out: |\n      18\n  - name: sample3\n    in: |\n      11 18\n      23 92 85 34 21 63 12 9 81 44 96\n      3 10 0\n      3 5 0\n      1 3 4\n      2 0 0\n      1 4 11\n      3 11 0\n      1 3 5\n      2 0 0\n      2 0 0\n      3 9 0\n      2 0 0\n      3 6 0\n      3 10 0\n      1 6 11\n      2 0 0\n      3 10 0\n      3 4 0\n      3 5 0\n    out: |\n      44\n      21\n      34\n      63\n      85\n      63\n      21\n      34\n      96\n\nextend:\n  - type: Text\n    path: \"./044\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "045": {
+        "in": {},
+        "out": {}
+      },
+      "045.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      3 2\n      0 1\n      1 2\n      2 0\n    out: |\n      2\n  - name: sample2\n    in: |\n      5 3\n      0 0\n      1 1\n      0 2\n      2 3\n      3 1\n    out: |\n      4\n  - name: sample3\n    in: |\n      10 4\n      0 3\n      3 5\n      2 7\n      9 0\n      5 6\n      4 3\n      7 8\n      6 5\n      9 9\n      2 1\n    out: |\n      20\n  - name: sample4\n    in: |\n      3 2\n      0 0\n      500000000 500000000\n      1000000000 1000000000\n    out: |\n      500000000000000000\n\nextend:\n  - type: Text\n    path: \"./045\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "046": {
+        "in": {},
+        "out": {}
+      },
+      "046.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      3\n      10 13 93\n      5 27 35\n      55 28 52\n    out: |\n      3\n  - name: sample2\n    in: |\n      3\n      10 56 102\n      16 62 108\n      20 66 112\n    out: |\n      27\n  - name: sample3\n    in: |\n      20\n      238 395 46 238 264 114 354 52 324 14 472 64 307 280 209 24 165 194 179 248\n      270 83 377 332 173 21 362 75 66 342 229 117 124 481 48 235 376 13 420 74\n      175 427 76 278 486 169 311 47 348 225 41 482 355 356 263 95 170 156 340 289\n    out: |\n      183\n\nextend:\n  - type: Text\n    path: \"./046\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "047": {
+        "in": {},
+        "out": {}
+      },
+      "047.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      5\n      RGBGB\n      GRGRB\n    out: |\n      6\n  - name: sample2\n    in: |\n      3\n      RRR\n      BBB\n    out: |\n      5\n  - name: sample3\n    in: |\n      10\n      BGGGRBBGRG\n      RGBBRGRGGG\n    out: |\n      4\n\nextend:\n  - type: Text\n    path: \"./047\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "048": {
+        "in": {},
+        "out": {}
+      },
+      "048.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      4 3\n      4 3\n      9 5\n      15 8\n      8 6\n    out: |\n      21\n  - name: sample2\n    in: |\n      2 2\n      7 6\n      3 2\n    out: |\n      8\n  - name: sample3\n    in: |\n      10 12\n      987753612 748826789\n      36950727 36005047\n      961239509 808587458\n      905633062 623962559\n      940964276 685396947\n      959540552 928301562\n      60467784 37828572\n      953685176 482123245\n      87983282 66762644\n      912605260 709048491\n    out: |\n      6437530406\n\nextend:\n  - type: Text\n    path: \"./048\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "049": {
+        "in": {},
+        "out": {}
+      },
+      "049.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      2 3\n      1 1 1\n      1 2 2\n      10 1 2\n    out: |\n      2\n  - name: sample2\n    in: |\n      2 3\n      1 1 1\n      10 2 2\n      1 1 2\n    out: |\n      2\n  - name: sample3\n    in: |\n      4 5\n      3 1 2\n      5 2 4\n      9 3 4\n      4 1 4\n      8 2 4\n    out: |\n      -1\n  - name: sample4\n    in: |\n      9 11\n      10 2 7\n      100 1 6\n      1 2 8\n      39 4 5\n      62 3 4\n      81 1 3\n      55 8 8\n      91 5 5\n      14 8 9\n      37 5 5\n      41 7 9\n    out: |\n      385\n\nextend:\n  - type: Text\n    path: \"./049\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "050": {
+        "in": {},
+        "out": {}
+      },
+      "050.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      3 2\n    out: |\n      3\n  - name: sample2\n    in: |\n      4 4\n    out: |\n      2\n  - name: sample3\n    in: |\n      5 2\n    out: |\n      8\n  - name: sample4\n    in: |\n      6783 125\n    out: |\n      674508908\n\nextend:\n  - type: Text\n    path: \"./050\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "051": {
+        "in": {},
+        "out": {}
+      },
+      "051.yml": "---\ntype: Batch\ntimelimit: 3s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      5 2 10\n      3 8 7 5 11\n    out: |\n      2\n  - name: sample2\n    in: |\n      5 1 10\n      7 7 7 7 7\n    out: |\n      5\n  - name: sample3\n    in: |\n      40 20 100\n      1 3 1 3 4 1 3 5 5 3 3 4 1 5 4 4 3 1 3 4 1 3 2 4 4 1 5 2 5 3 1 3 3 3 5 5 5 2 3 5\n    out: |\n      137846528820\n\nextend:\n  - type: Text\n    path: \"./051\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "052": {
+        "in": {},
+        "out": {}
+      },
+      "052.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      2\n      1 2 3 5 7 11\n      4 6 8 9 10 12\n    out: |\n      1421\n  - name: sample2\n    in: |\n      1\n      11 13 17 19 23 29\n    out: |\n      112\n  - name: sample3\n    in: |\n      7\n      19 23 51 59 91 99\n      15 45 56 65 69 94\n      7 11 16 34 59 95\n      27 30 40 43 83 85\n      19 23 25 27 45 99\n      27 48 52 53 60 81\n      21 36 49 72 82 84\n    out: |\n      670838273\n\nextend:\n  - type: Text\n    path: \"./052\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "053.yml": "---\ntype: Interactive\ntimelimit: 2s\n",
+      "054": {
+        "in": {},
+        "out": {}
+      },
+      "054.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      6 3\n      3\n      1 2 3\n      2\n      3 4\n      2\n      5 6\n    out: |\n      0\n      1\n      1\n      2\n      -1\n      -1\n  - name: sample2\n    in: |\n      4 3\n      2\n      1 2\n      2\n      2 3\n      2\n      3 4\n    out: |\n      0\n      1\n      2\n      3\n  - name: sample3\n    in: |\n      4 1\n      3\n      2 3 4\n    out: |\n      0\n      -1\n      -1\n      -1\n  - name: sample4\n    in: |\n      11 5\n      4\n      2 6 9 10\n      3\n      1 3 8\n      5\n      2 4 6 8 10\n      2\n      6 7\n      4\n      5 6 7 8\n    out: |\n      0\n      2\n      1\n      2\n      2\n      2\n      2\n      1\n      3\n      2\n      -1\n\nextend:\n  - type: Text\n    path: \"./054\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "055": {
+        "in": {},
+        "out": {}
+      },
+      "055.yml": "---\ntype: Batch\ntimelimit: 5s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      6 7 1\n      1 2 3 4 5 6\n    out: |\n      1\n  - name: sample2\n    in: |\n      10 1 0\n      0 0 0 0 0 0 0 0 0 0\n    out: |\n      252\n\nextend:\n  - type: Text\n    path: \"./055\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "056": {
+        "in": {},
+        "out": {}
+      },
+      "056.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      3 34\n      3 14\n      15 9\n      26 5\n    out: |\n      BAB\n  - name: sample2\n    in: |\n      5 77\n      1 16\n      3 91\n      43 9\n      4 26\n      23 11\n    out: |\n      BABBA\n  - name: sample3\n    in: |\n      5 59\n      8 13\n      55 5\n      58 8\n      23 14\n      4 61\n    out: |\n      Impossible\n\nextend:\n  - type: Text\n    path: \"./056\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "057": {
+        "in": {},
+        "out": {}
+      },
+      "057.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      2 3\n      2\n      1 2\n      2\n      2 3\n      1 0 1\n    out: |\n      1\n  - name: sample2\n    in: |\n      2 3\n      1\n      1\n      1\n      2\n      0 1 1\n    out: |\n      0\n  - name: sample3\n    in: |\n      3 2\n      1\n      1\n      1\n      2\n      1\n      2\n      1 0\n    out: |\n      2\n  - name: sample4\n    in: |\n      13 6\n      3\n      1 3 5\n      3\n      1 4 5\n      4\n      3 4 5 6\n      2\n      2 5\n      4\n      1 2 3 5\n      3\n      3 4 6\n      3\n      4 5 6\n      6\n      1 2 3 4 5 6\n      4\n      1 3 5 6\n      3\n      1 2 4\n      3\n      1 5 6\n      4\n      1 2 3 4\n      1\n      5\n      1 0 0 1 0 0\n    out: |\n      128\n\nextend:\n  - type: Text\n    path: \"./057\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "058": {
+        "in": {},
+        "out": {}
+      },
+      "058.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      5 3\n    out: |\n      13\n  - name: sample2\n    in: |\n      0 100\n    out: |\n      0\n  - name: sample3\n    in: |\n      99999 1000000000000000000\n    out: |\n      84563\n\nextend:\n  - type: Text\n    path: \"./058\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "059": {
+        "in": {},
+        "out": {}
+      },
+      "059.yml": "---\ntype: Batch\ntimelimit: 3s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      6 6 3\n      1 3\n      2 4\n      1 4\n      4 6\n      5 6\n      1 5\n      2 6\n      1 5\n      3 6\n    out: |\n      Yes\n      Yes\n      No\n  - name: sample2\n    in: |\n      3 2 2\n      1 2\n      1 2\n      1 2\n      2 3\n    out: |\n      Yes\n      No\n  - name: sample3\n    in: |\n      2 1 1\n      1 2\n      1 2\n    out: |\n      Yes\n\nextend:\n  - type: Text\n    path: \"./059\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "060": {
+        "in": {},
+        "out": {}
+      },
+      "060.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      6\n      1 2 3 3 2 1\n    out: |\n      5\n  - name: sample2\n    in: |\n      4\n      1 2 3 4\n    out: |\n      4\n  - name: sample3\n    in: |\n      5\n      3 3 3 3 3\n    out: |\n      1\n\nextend:\n  - type: Text\n    path: \"./060\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "061": {
+        "in": {},
+        "out": {}
+      },
+      "061.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      6\n      1 2\n      1 1\n      2 3\n      3 1\n      3 2\n      3 3\n    out: |\n      1\n      2\n      3\n  - name: sample2\n    in: |\n      6\n      2 1\n      3 1\n      2 2\n      3 1\n      2 3\n      3 1\n    out: |\n      1\n      1\n      1\n  - name: sample3\n    in: |\n      6\n      1 1000000000\n      2 200000000\n      1 30000000\n      2 4000000\n      1 500000\n      3 3\n    out: |\n      1000000000\n\nextend:\n  - type: Text\n    path: \"./061\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "062": {
+        "in": {},
+        "out": {}
+      },
+      "062.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      4\n      3 4\n      1 3\n      2 3\n      2 1\n    out: |\n      4\n      2\n      1\n      3\n  - name: sample2\n    in: |\n      3\n      1 1\n      2 2\n      3 3\n    out: |\n      3\n      2\n      1\n  - name: sample3\n    in: |\n      5\n      3 4\n      4 5\n      1 1\n      5 1\n      3 2\n    out: |\n      -1\n  - name: sample4\n    in: |\n      6\n      5 5\n      2 4\n      6 6\n      5 2\n      1 3\n      4 1\n    out: |\n      1\n      5\n      3\n      6\n      4\n      2\n  - name: sample5\n    in: |\n      10\n      5 1\n      3 9\n      7 8\n      9 3\n      3 7\n      10 10\n      3 5\n      4 7\n      1 1\n      6 6\n    out: |\n      -1\n\nextend:\n  - type: Text\n    path: \"./062\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "063": {
+        "in": {},
+        "out": {}
+      },
+      "063.yml": "---\ntype: Batch\ntimelimit: 4s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      4 6\n      1 1 1 1 1 2\n      1 2 2 2 2 2\n      1 2 2 3 2 3\n      1 2 3 2 2 3\n    out: |\n      6\n  - name: sample2\n    in: |\n      3 3\n      1 2 3\n      4 5 6\n      7 8 9\n    out: |\n      1\n  - name: sample3\n    in: |\n      5 3\n      7 7 7\n      7 7 7\n      7 7 7\n      7 7 7\n      7 7 7\n    out: |\n      15\n\nextend:\n  - type: Text\n    path: \"./063\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "064": {
+        "in": {},
+        "out": {}
+      },
+      "064.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      3 3\n      1 2 3\n      2 3 1\n      1 2 -1\n      1 3 2\n    out: |\n      3\n      4\n      4\n  - name: sample2\n    in: |\n      20 10\n      61 51 92 -100 -89 -65 -89 -64 -74 7 87 -2 51 -39 -50 63 -23 36 74 37\n      2 2 -45\n      6 19 82\n      2 9 36\n      7 13 71\n      16 20 90\n      18 20 -24\n      14 17 -78\n      10 11 -55\n      7 19 -26\n      20 20 -7\n    out: |\n      1164\n      1328\n      1256\n      1350\n      1440\n      1416\n      1572\n      1482\n      1430\n      1437\n\nextend:\n  - type: Text\n    path: \"./064\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "065": {
+        "in": {},
+        "out": {}
+      },
+      "065.yml": "---\ntype: Batch\ntimelimit: 3s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      3 1 2 5\n      4 2 4\n    out: |\n      2\n  - name: sample2\n    in: |\n      65 6 12 35\n      30 18 35\n    out: |\n      257190020\n  - name: sample3\n    in: |\n      23502 65936 72385 95835\n      72759 85735 72385\n    out: |\n      229429276\n\nextend:\n  - type: Text\n    path: \"./065\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "066": {
+        "in": {},
+        "out": {}
+      },
+      "066.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch:\n  Float:\n    relative_error: 1e-7\n    absolute_error: 1e-7\n\ncases:\n  - name: sample1\n    in: |\n      2\n      1 2\n      1 2\n    out: |\n      0.250000000000\n  - name: sample2\n    in: |\n      3\n      3 3\n      1 1\n      4 4\n    out: |\n      1.000000000000\n  - name: sample3\n    in: |\n      10\n      1 10\n      38 40\n      8 87\n      2 9\n      75 100\n      45 50\n      89 92\n      27 77\n      23 88\n      62 81\n    out: |\n      13.696758921226\n\nextend:\n  - type: Text\n    path: \"./066\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "067": {
+        "in": {},
+        "out": {}
+      },
+      "067.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      21 1\n    out: |\n      15\n  - name: sample2\n    in: |\n      1330 1\n    out: |\n      555\n  - name: sample3\n    in: |\n      2311640221315 15\n    out: |\n      474547\n\nextend:\n  - type: Text\n    path: \"./067\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "068": {
+        "in": {},
+        "out": {}
+      },
+      "068.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      4\n      7\n      0 1 2 3\n      1 1 2 1\n      1 3 4 5\n      0 3 4 6\n      1 3 4 5\n      0 2 3 6\n      1 3 1 5\n    out: |\n      2\n      Ambiguous\n      1\n      2\n  - name: sample2\n    in: |\n      15\n      25\n      0 11 12 41\n      0 1 2 159\n      0 14 15 121\n      0 4 5 245\n      0 12 13 157\n      0 9 10 176\n      0 6 7 170\n      0 2 3 123\n      0 7 8 167\n      0 3 4 159\n      1 12 11 33\n      0 10 11 116\n      0 8 9 161\n      1 9 12 68\n      1 12 12 33\n      1 7 12 74\n      0 5 6 290\n      1 8 9 93\n      0 13 14 127\n      1 10 12 108\n      1 14 1 3\n      1 13 8 124\n      1 12 11 33\n      1 12 10 33\n      1 5 15 194\n    out: |\n      8\n      33\n      33\n      33\n      68\n      33\n      144\n      93\n      8\n      108\n      118\n\nextend:\n  - type: Text\n    path: \"./068\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "069": {
+        "in": {},
+        "out": {}
+      },
+      "069.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      2 3\n    out: |\n      6\n  - name: sample2\n    in: |\n      10 2\n    out: |\n      0\n  - name: sample3\n    in: |\n      2021 617\n    out: |\n      53731843\n\nextend:\n  - type: Text\n    path: \"./069\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "070": {
+        "in": {},
+        "out": {}
+      },
+      "070.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      2\n      -1 2\n      1 1\n    out: |\n      3\n  - name: sample2\n    in: |\n      2\n      1 0\n      0 1\n    out: |\n      2\n  - name: sample3\n    in: |\n      5\n      2 5\n      2 5\n      -3 4\n      -4 -8\n      6 -2\n    out: |\n      35\n  - name: sample4\n    in: |\n      4\n      1000000000 1000000000\n      -1000000000 1000000000\n      -1000000000 -1000000000\n      1000000000 -1000000000\n    out: |\n      8000000000\n\nextend:\n  - type: Text\n    path: \"./070\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "071": {
+        "in": {},
+        "out": {}
+      },
+      "071.yml": "---\ntype: Batch\ntimelimit: 3s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      5 2 3\n      1 2\n      3 4\n    out: |\n      1 2 3 4 5\n      1 3 2 4 5\n      1 3 5 2 4\n  - name: sample2\n    in: |\n      5 2 1\n      1 3\n      3 1\n    out: |\n      -1\n  - name: sample3\n    in: |\n      10 15 10\n      8 4\n      9 4\n      10 2\n      6 2\n      10 6\n      1 3\n      7 4\n      6 8\n      8 1\n      5 6\n      10 9\n      3 7\n      8 3\n      3 9\n      2 3\n    out: |\n      5 10 6 2 8 1 3 7 9 4\n      5 10 6 2 8 1 3 9 7 4\n      5 10 6 8 2 1 3 7 9 4\n      5 10 6 8 2 1 3 9 7 4\n      5 10 6 8 1 2 3 7 9 4\n      5 10 6 8 1 2 3 9 7 4\n      10 5 6 2 8 1 3 7 9 4\n      10 5 6 2 8 1 3 9 7 4\n      10 5 6 8 2 1 3 7 9 4\n      10 5 6 8 2 1 3 9 7 4\n\nextend:\n  - type: Text\n    path: \"./071\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "072": {
+        "in": {},
+        "out": {}
+      },
+      "072.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      3 3\n      ...\n      .#.\n      ...\n    out: |\n      8\n  - name: sample2\n    in: |\n      1 6\n      ......\n    out: |\n      -1\n  - name: sample3\n    in: |\n      4 4\n      ....\n      #...\n      ....\n      ...#\n    out: |\n      12\n\nextend:\n  - type: Text\n    path: \"./072\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "073": {
+        "in": {},
+        "out": {}
+      },
+      "073.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      7\n      b a b a b b a\n      2 1\n      3 7\n      3 2\n      3 4\n      5 4\n      4 6\n    out: |\n      4\n  - name: sample2\n    in: |\n      2\n      a b\n      1 2\n    out: |\n      1\n  - name: sample3\n    in: |\n      22\n      b a b b a b b b a b a a a a b b a b b a a a\n      1 7\n      4 14\n      12 22\n      2 4\n      21 17\n      3 20\n      7 8\n      20 14\n      15 11\n      8 14\n      9 12\n      17 8\n      6 20\n      11 20\n      18 19\n      10 8\n      22 20\n      13 21\n      5 14\n      19 20\n      16 14\n    out: |\n      16\n\nextend:\n  - type: Text\n    path: \"./073\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "074": {
+        "in": {},
+        "out": {}
+      },
+      "074.yml": "---\ntype: Batch\ntimelimit: 1s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      3\n      aba\n    out: |\n      2\n  - name: sample2\n    in: |\n      10\n      aaaaaaaaaa\n    out: |\n      0\n  - name: sample3\n    in: |\n      5\n      baaca\n    out: |\n      17\n\nextend:\n  - type: Text\n    path: \"./074\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "075": {
+        "in": {},
+        "out": {}
+      },
+      "075.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      42\n    out: |\n      2\n  - name: sample2\n    in: |\n      48\n    out: |\n      3\n  - name: sample3\n    in: |\n      54\n    out: |\n      2\n  - name: sample4\n    in: |\n      53\n    out: |\n      0\n\nextend:\n  - type: Text\n    path: \"./075\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "076": {
+        "in": {},
+        "out": {}
+      },
+      "076.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      10\n      1 1 1 1 1 1 1 1 1 1\n    out: |\n      Yes\n  - name: sample2\n    in: |\n      3\n      1 1 1\n    out: |\n      No\n  - name: sample3\n    in: |\n      3\n      1 18 1\n    out: |\n      Yes\n  - name: sample4\n    in: |\n      4\n      1 9 1 9\n    out: |\n      No\n\nextend:\n  - type: Text\n    path: \"./076\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "077": {
+        "in": {},
+        "out": {}
+      },
+      "077.yml": "---\ntype: Batch\ntimelimit: 1s 500ms\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      3 2\n      3 3\n      5 5\n      9 2\n      11 2\n      5 5\n      3 3\n    out: |\n      Yes\n      2 6 1\n  - name: sample2\n    in: |\n      3 2\n      3 3\n      5 5\n      9 2\n      11 1000000000\n      5 5\n      3 3\n    out: |\n      No\n  - name: sample3\n    in: |\n      20 774\n      540130346 269080121\n      139837096 165633078\n      731188937 784167460\n      18996195 52176517\n      153153670 738204723\n      179733158 825294112\n      698198250 713974773\n      449248931 563096572\n      249863070 242694893\n      428066819 476630383\n      554127636 460973490\n      389988495 32320086\n      889782910 956212985\n      43905938 212030305\n      638141790 667879166\n      985957895 358743012\n      971007109 827787244\n      804625543 141347414\n      905270323 167192824\n      614855582 963943648\n      179733932 825294886\n      731188163 784166686\n      153154444 738205497\n      554128410 460973490\n      804626317 141348188\n      449249705 563096572\n      540129572 269079347\n      638142564 667878392\n      614855582 963944422\n      18996969 52177291\n      971007109 827788018\n      889782910 956213759\n      43906712 212031079\n      389987721 32319312\n      139836322 165633078\n      428067593 476631157\n      905271097 167192824\n      249862296 242694893\n      985958669 358742238\n      698199024 713975547\n    out: |\n      Yes\n      6 5 6 2 2 2 2 1 5 2 1 6 3 2 8 8 3 2 1 3\n\nextend:\n  - type: Text\n    path: \"./077\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "078": {
+        "in": {},
+        "out": {}
+      },
+      "078.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      5 5\n      1 2\n      1 3\n      3 2\n      5 2\n      4 2\n    out: |\n      3\n  - name: sample2\n    in: |\n      2 1\n      1 2\n    out: |\n      1\n  - name: sample3\n    in: |\n      7 18\n      7 2\n      1 6\n      5 2\n      1 3\n      7 6\n      5 3\n      5 6\n      5 4\n      1 7\n      2 6\n      3 4\n      5 1\n      4 7\n      4 6\n      5 7\n      3 2\n      4 2\n      1 4\n    out: |\n      0\n\nextend:\n  - type: Text\n    path: \"./078\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "079": {
+        "in": {},
+        "out": {}
+      },
+      "079.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      3 3\n      0 0 0\n      0 0 0\n      0 0 0\n      1 1 0\n      1 1 0\n      0 0 0\n    out: |\n      Yes\n      1\n  - name: sample2\n    in: |\n      3 3\n      0 0 0\n      0 0 0\n      0 0 0\n      0 0 0\n      0 1 0\n      0 0 0\n    out: |\n      No\n  - name: sample3\n    in: |\n      5 5\n      6 17 18 29 22\n      39 50 25 39 25\n      34 34 8 25 17\n      28 48 25 47 42\n      27 47 24 32 28\n      4 6 3 29 28\n      48 50 21 48 29\n      44 44 19 47 28\n      4 49 46 29 28\n      4 49 45 1 1\n    out: |\n      Yes\n      140\n\nextend:\n  - type: Text\n    path: \"./079\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "080": {
+        "in": {},
+        "out": {}
+      },
+      "080.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      4 3\n      1 3 4 5\n    out: |\n      2\n  - name: sample2\n    in: |\n      5 21\n      1050624 32772 493952 144 869120\n    out: |\n      869120\n  - name: sample3\n    in: |\n      20 60\n      216181578206878016 81348488767472704 26388280246272 281543729742896 72127981178847488 2199108462600 585610888171487234 22027813536776 567459673280576 146648462866649600 144484898860704776 576471786208755714 4398621196432 144141576657960976 81069330992726040 360851057582278674 17859112 11570646360064 144115206396936193 1702052723957760\n    out: |\n      977902973481140224\n\nextend:\n  - type: Text\n    path: \"./080\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "081": {
+        "in": {},
+        "out": {}
+      },
+      "081.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      3 4\n      1 1\n      2 5\n      7 4\n    out: |\n      2\n  - name: sample2\n    in: |\n      2 123\n      4 5\n      678 901\n    out: |\n      1\n  - name: sample3\n    in: |\n      7 10\n      20 20\n      20 20\n      20 30\n      20 40\n      30 20\n      30 30\n      40 20\n    out: |\n      5\n\nextend:\n  - type: Text\n    path: \"./081\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "082": {
+        "in": {},
+        "out": {}
+      },
+      "082.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      3 5\n    out: |\n      12\n  - name: sample2\n    in: |\n      98 100\n    out: |\n      694\n  - name: sample3\n    in: |\n      1001 869120\n    out: |\n      59367733\n  - name: sample4\n    in: |\n      381453331666495446 746254773042091083\n    out: |\n      584127830\n\nextend:\n  - type: Text\n    path: \"./082\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "083": {
+        "in": {},
+        "out": {}
+      },
+      "083.yml": "---\ntype: Batch\ntimelimit: 3s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      4 4\n      1 2\n      1 3\n      1 4\n      2 3\n      5\n      4 2\n      3 3\n      2 4\n      4 5\n      1 6\n    out: |\n      1\n      1\n      3\n      2\n      5\n  - name: sample2\n    in: |\n      10 20\n      1 3\n      7 8\n      5 8\n      2 3\n      7 10\n      6 7\n      4 7\n      9 5\n      6 5\n      2 9\n      4 2\n      5 7\n      3 10\n      4 8\n      1 8\n      10 8\n      5 3\n      9 1\n      7 3\n      2 1\n      10\n      3 5\n      2 2\n      8 9\n      5 3\n      8 2\n      3 9\n      7 1\n      7 1\n      8 4\n      6 8\n    out: |\n      1\n      5\n      1\n      9\n      3\n      3\n      9\n      1\n      1\n      1\n\nextend:\n  - type: Text\n    path: \"./083\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "084": {
+        "in": {},
+        "out": {}
+      },
+      "084.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      4\n      ooxo\n    out: |\n      5\n  - name: sample2\n    in: |\n      5\n      oxoxo\n    out: |\n      10\n  - name: sample3\n    in: |\n      5\n      ooooo\n    out: |\n      0\n  - name: sample4\n    in: |\n      7\n      xxoooxx\n    out: |\n      16\n\nextend:\n  - type: Text\n    path: \"./084\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "085": {
+        "in": {},
+        "out": {}
+      },
+      "085.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      42\n    out: |\n      5\n  - name: sample2\n    in: |\n      7\n    out: |\n      1\n  - name: sample3\n    in: |\n      192\n    out: |\n      16\n\nextend:\n  - type: Text\n    path: \"./085\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "086": {
+        "in": {},
+        "out": {}
+      },
+      "086.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      4 2\n      1 2 3 50\n      2 3 4 45\n    out: |\n      13\n  - name: sample2\n    in: |\n      8 2\n      2 3 6 1152886174205865983\n      1 2 8 1116611213275394047\n    out: |\n      395781543\n\nextend:\n  - type: Text\n    path: \"./086\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "087": {
+        "in": {},
+        "out": {}
+      },
+      "087.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      3 4 2\n      0 3 -1\n      3 0 5\n      -1 5 0\n    out: |\n      3\n  - name: sample2\n    in: |\n      3 10 2\n      0 -1 10\n      -1 0 1\n      10 1 0\n    out: |\n      Infinity\n  - name: sample3\n    in: |\n      13 777 77\n      0 425 886 764 736 -1 692 660 -1 316 424 490 423\n      425 0 -1 473 -1 311 -1 -1 903 941 386 521 486\n      886 -1 0 605 519 473 775 467 677 769 690 483 501\n      764 473 605 0 424 454 474 408 421 530 756 568 685\n      736 -1 519 424 0 -1 804 598 911 731 837 459 610\n      -1 311 473 454 -1 0 479 613 880 -1 393 875 334\n      692 -1 775 474 804 479 0 579 -1 -1 575 985 603\n      660 -1 467 408 598 613 579 0 456 378 887 -1 372\n      -1 903 677 421 911 880 -1 456 0 859 701 476 370\n      316 941 769 530 731 -1 -1 378 859 0 800 870 740\n      424 386 690 756 837 393 575 887 701 800 0 -1 304\n      490 521 483 568 459 875 985 -1 476 870 -1 0 716\n      423 486 501 685 610 334 603 372 370 740 304 716 0\n    out: |\n      42\n\nextend:\n  - type: Text\n    path: \"./087\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "088": {
+        "in": {},
+        "out": {}
+      },
+      "088.yml": "---\ntype: Batch\ntimelimit: 2s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      5 2\n      3 1 3 2 3\n      1 2\n      1 4\n    out: |\n      4\n      2 3 4 5\n      3\n      1 3 5\n  - name: sample2\n    in: |\n      10 10\n      2 5 7 8 11 10 1 88 86 50\n      1 2\n      1 3\n      1 4\n      1 5\n      1 6\n      5 10\n      6 10\n      2 3\n      9 10\n      7 8\n    out: |\n      2\n      6 7\n      1\n      5\n\nextend:\n  - type: Text\n    path: \"./088\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "089": {
+        "in": {},
+        "out": {}
+      },
+      "089.yml": "---\ntype: Batch\ntimelimit: 3s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      4 0\n      3 1 4 2\n    out: |\n      2\n  - name: sample2\n    in: |\n      7 2\n      5 3 7 2 1 2 3\n    out: |\n      44\n  - name: sample3\n    in: |\n      7 0\n      7 6 5 4 3 2 1\n    out: |\n      1\n\nextend:\n  - type: Text\n    path: \"./089\"\n    in: /in/*.txt\n    out: /out/*.txt\n",
+      "090": {
+        "in": {},
+        "out": {}
+      },
+      "090.yml": "---\ntype: Batch\ntimelimit: 7s\nmatch: Lines\n\ncases:\n  - name: sample1\n    in: |\n      2 2\n    out: |\n      8\n  - name: sample2\n    in: |\n      17 29\n    out: |\n      263173793\n  - name: sample3\n    in: |\n      2718 2818\n    out: |\n      393799986\n  - name: sample4\n    in: |\n      28593 1\n    out: |\n      365728740\n  - name: sample5\n    in: |\n      869120 1001\n    out: |\n      967393022\n\nextend:\n  - type: Text\n    path: \"./090\"\n    in: /in/*.txt\n    out: /out/*.txt\n"
+    }
+  }
+}

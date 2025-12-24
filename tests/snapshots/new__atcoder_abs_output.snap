@@ -1,0 +1,19 @@
+---
+source: tests/new.rs
+assertion_line: 19
+expression: output
+
+---
+     Created `abs` package at {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}abs
+       Saved 2 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}abs{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{practice-a.yml, practice-a{{ slash_or_backslash }}}
+       Saved 2 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}abs{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{abc086a.yml, abc086a{{ slash_or_backslash }}}
+       Saved 2 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}abs{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{abc081a.yml, abc081a{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}abs{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{abc081b.yml, abc081b{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}abs{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{abc087b.yml, abc087b{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}abs{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{abc083b.yml, abc083b{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}abs{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{abc088b.yml, abc088b{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}abs{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{abc085b.yml, abc085b{{ slash_or_backslash }}}
+       Saved 4 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}abs{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{abc085c.yml, abc085c{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}abs{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{abc049c.yml, abc049c{{ slash_or_backslash }}}
+       Saved 3 test cases to {{ cwd }}{{ slash_or_backslash }}.{{ slash_or_backslash }}abs{{ slash_or_backslash }}testcases{{ slash_or_backslash }}{abc086c.yml, abc086c{{ slash_or_backslash }}}
+

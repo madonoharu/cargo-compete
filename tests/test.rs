@@ -103,7 +103,7 @@ target-dir = "target"
                     r#"[package]
 name = "problems"
 version = "0.1.0"
-edition = "2018"
+edition = "2024"
 
 [package.metadata.cargo-compete.bin]
 {contest}-{problem} = {{ alias = "{problem}", problem = "{url}" }}
