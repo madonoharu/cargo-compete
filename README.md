@@ -1,3 +1,9 @@
+# This repository is a fork of [qitoy/cargo-compete](https://github.com/qitoy/cargo-compete).
+
+```console
+$ cargo install --git https://github.com/madonoharu/cargo-compete
+```
+
 # cargo-compete
 
 [![CI](https://github.com/qryxip/cargo-compete/workflows/CI/badge.svg)](https://github.com/qryxip/cargo-compete/actions?workflow=CI)
@@ -23,12 +29,12 @@ Other websites are available via [online-judge-tools/api-client](https://github.
 - Submit your code,
 - Watch your submissions. (available for only AtCoder)
 
-|                | Registeration          | Sample Test Cases             | System Test Cases             | Submiting                     | Watching Submissions    | Submission Details |
-| :------------: | :--------------------: | :---------------------------: | :---------------------------: | :---------------------------: | :---------------------: | :----------------: |
-| AtCoder        | :heavy_check_mark:     | :heavy_check_mark:            | :heavy_check_mark:            | :heavy_check_mark:            | :grey_question:         | :x:                |
-| Codeforces     | :x:                    | :heavy_check_mark:            | N/A                           | :heavy_check_mark:            | :x:                     | :x:                |
-| yukicoder      | N/A                    | :heavy_check_mark:            | :heavy_check_mark:            | :heavy_check_mark:            | :x:                     | :x:                |
-| Other websites | :x:                    | Depends on online-judge-tools | Depends on online-judge-tools | Depends on online-judge-tools | :x:                     | :x:                |
+|                |   Registeration    |       Sample Test Cases       |       System Test Cases       |           Submiting           | Watching Submissions | Submission Details |
+| :------------: | :----------------: | :---------------------------: | :---------------------------: | :---------------------------: | :------------------: | :----------------: |
+|    AtCoder     | :heavy_check_mark: |      :heavy_check_mark:       |      :heavy_check_mark:       |      :heavy_check_mark:       |   :grey_question:    |        :x:         |
+|   Codeforces   |        :x:         |      :heavy_check_mark:       |              N/A              |      :heavy_check_mark:       |         :x:          |        :x:         |
+|   yukicoder    |        N/A         |      :heavy_check_mark:       |      :heavy_check_mark:       |      :heavy_check_mark:       |         :x:          |        :x:         |
+| Other websites |        :x:         | Depends on online-judge-tools | Depends on online-judge-tools | Depends on online-judge-tools |         :x:          |        :x:         |
 
 ## Installation
 
@@ -61,17 +67,17 @@ It generates the following files.
 
 - [`compete.toml`](#configuration)
 
-    Required for other commands.
+  Required for other commands.
 
 - [`.cargo/config.toml`](https://doc.rust-lang.org/cargo/reference/config.html)
 
-    Sets `build/target-dir` to share the [`target` directory](https://doc.rust-lang.org/cargo/guide/build-cache.html).
+  Sets `build/target-dir` to share the [`target` directory](https://doc.rust-lang.org/cargo/guide/build-cache.html).
 
 - `template-cargo-lock.toml`
 
-    A template of `Cargo.lock` for [`cargo compete new`](#cargo-compete-new).
-    Generated only if you answer `2 Yes` to `Do you use crates on AtCoder?` question.
-    If this file is generated, file path to it is added to `new.template.lockfile` in `compete.toml`.
+  A template of `Cargo.lock` for [`cargo compete new`](#cargo-compete-new).
+  Generated only if you answer `2 Yes` to `Do you use crates on AtCoder?` question.
+  If this file is generated, file path to it is added to `new.template.lockfile` in `compete.toml`.
 
 ![Screenshot](https://user-images.githubusercontent.com/14125495/91646306-b7e65980-ea88-11ea-8f0c-f11080b914ed.png)
 
@@ -110,7 +116,7 @@ If you forget to add `--open`, `cd` to the generated package and run [`cargo com
 
 ### `cargo compete add`
 
-Generates [`bin` targets]((https://doc.rust-lang.org/cargo/reference/cargo-targets.html#binaries)) and retrieves the test cases for them.
+Generates [`bin` targets](<(https://doc.rust-lang.org/cargo/reference/cargo-targets.html#binaries)>) and retrieves the test cases for them.
 
 **Requires [`compete.toml`](#configuration).**
 Generate it with [`cargo compete init`](#cargo-compete-init) first.
@@ -853,7 +859,6 @@ A test suite for an interactive problem.
 ### `TestSuite::Unsubmittable`
 
 A dummy test suite for dummy problems such as ones in [APG4b](https://atcoder.jp/contests/APG4b).
-
 
 <table>
   <thead>
