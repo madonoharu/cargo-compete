@@ -76,8 +76,13 @@ pub(crate) fn run(opt: OptCompeteInit, ctx: crate::Context<'_>) -> anyhow::Resul
 
     let mut write_with_status = |file_name: &str, content: &str| -> anyhow::Result<()> {
         let path = path.join(file_name);
-        crate::fs::write(&path, content)?;
-        shell.status("Wrote", path.display())?;
+        if path.exists() {
+            shell.status("Exists", path.display())?;
+        } else {
+            crate::fs::write(&path, content)?;
+            shell.status("Wrote", path.display())?;
+        }
+
         Ok(())
     };
 
